@@ -1,0 +1,177 @@
+.portada{
+  background-image: url("../imagenes/principal3.jpg");
+  height: 780px;
+  width: 100%;
+  background-position: center center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+  
+}
+
+.navbar-trans{
+   background-color: transparent !important;
+   
+}
+
+.efectoMenu{
+    transition: all .4s;
+    text-decoration: none;
+
+}
+/* .efectoMenu:hover{
+    background: #040D16;
+
+} */
+
+#navbarNav a{
+
+  display: block;
+  float: left;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+li.efectoMenu{
+    border:none;
+    position: relative;
+  }
+
+li.efectoMenu:hover{
+    border: none;
+  }
+
+.efectoMenu::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    left: 50%;
+    bottom:0;
+    background-color: #05BAC9;
+    transition: all ease-in-out .4s;
+  }
+
+.efectoMenu:hover::after{
+    width: 100%;
+    left: 0;
+  }
+
+  .font-titulo{
+    font-family:'Open Sans', sans-serif;
+    font-size: 280%;
+    font-weight: bold;
+    color: #05BAC9;
+  }
+  
+  .font-tituloConoce{
+    font-family:''Open Sans', sans-serif';
+    font-size: 280%;
+    font-weight: normal;
+  }
+
+  .imgBienvenida{
+    width: 30%;
+    position: absolute;
+    left: 580px;
+    top:130px;
+    z-index: 1;
+   
+  }
+  
+  .cajaBienvenida{
+    position: relative;
+
+  }
+
+.contBienvenido{
+  color: white;
+  text-align: center;
+  padding-top: 260px;
+
+}
+
+.contProfesionales{
+  color: white;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.lineaContenido{
+  display: inline-block;
+  position:relative;
+  
+}
+
+.lineaContenido::after,.lineaContenido::before{
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background-color: #05BAC9;
+  top: 0.7em;
+}
+
+.lineaContenido::before{
+  left: -40px;
+}
+
+.lineaContenido::after{
+  right: -40px;
+
+}
+
+.styleButton{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contenedorAcercade{
+  background-color: #F4F7F9;
+}
+.titlePrincipales{
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #05BAC9;
+}
+
+
+.textoAcerca{
+  text-align: justify;
+}
+
+.paddingTexto{
+  padding-top: 50px;
+
+}
+
+.titleMisionVision{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.subtituloServicios{
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    #logo{
+      
+      display: none;
+    
+    }
+
+
+}
