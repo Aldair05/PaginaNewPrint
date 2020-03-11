@@ -197,7 +197,17 @@ ul{
   
 }
 
+.marg-btn{
+  margin-right: 15px;
+}
 
+.padding-menuGaleria{
+  padding-top: 40px;
+}
+
+.btn-outline-dark:hover{
+  background-color: #05BAC9;
+}
 
 /* INICIO DE MEDIASQUERYS */
 
