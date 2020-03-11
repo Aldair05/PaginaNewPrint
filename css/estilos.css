@@ -166,12 +166,44 @@ li.efectoMenu:hover{
 
 
 @media screen and (max-width: 768px) {
-
-    #logo{
-      
+    #logo{ 
       display: none;
-    
-    }
 
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+ 
+  .contBienvenido{
+    color: white;
+    text-align: center;
+    padding-top: 240px;
+  
+  }
+
+
+  .font-titulo{
+    font-family:'Open Sans', sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    color: #05BAC9;
+  }
+
+  .font-tituloConoce{
+    font-family:''Open Sans', sans-serif';
+    font-size: 150%;
+    font-weight: normal;
+  }
+
+  .contProfesionales{
+    color: white;
+    text-align: center;
+    padding-top: 0px;
+    font-size:80%;
+  }
 
 }
+
+
+
