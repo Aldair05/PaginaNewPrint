@@ -131,7 +131,7 @@ li.efectoMenu:hover{
   padding-top: 20px;
 }
 
-.contenedorAcercade{
+.fondocontenedores{
   background-color: #F4F7F9;
 }
 .titlePrincipales{
@@ -143,13 +143,20 @@ li.efectoMenu:hover{
   color: #05BAC9;
 }
 
+.imgAcerca{
+  border-radius: 20px;
+}
+.paddingImgAcerca{
+
+  padding-top: 50px;
+}
 
 .textoAcerca{
   text-align: justify;
 }
 
 .paddingTexto{
-  padding-top: 50px;
+  padding-top: 130px;
 
 }
 
@@ -163,7 +170,36 @@ li.efectoMenu:hover{
     padding-top: 30px;
 }
 
+.paddingIcono{
+    text-align: center;
+    padding-top: 50px;
+}
 
+.tamañoIcono{
+  font-size: 40px;
+}
+
+.tamañoIcono:hover{
+  color: #05BAC9;
+}
+
+ul{
+  list-style: none;
+}
+
+.ul-pal{ 
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #3EC1D5;
+  text-align: center;
+  
+}
+
+
+
+/* INICIO DE MEDIASQUERYS */
 
 @media screen and (max-width: 768px) {
     #logo{ 

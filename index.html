@@ -8,11 +8,12 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" href="css/">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet"><body>
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  
     
       <!--COMIENZA EL MENU-->
     <div class="">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-trans">
+      <nav id= "menu" class="navbar navbar-expand-lg fixed-top navbar-dark">
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -61,16 +62,16 @@
 
   <!--INICIA CONTENEDOR ACERCA DE-->
 
-   <div class="contenedorAcercade">
+   <div class="fondocontenedores">
      <section class="container ">
-       <div class="titlePrincipales">
+       <div class=" animated fadeInLeft titlePrincipales">
          <span>Acerca de la empresa</span>
        </div>
        <div>
           <div class="">
             <div class="row">
-                 <div class="col-md-6 paddingTexto">
-                    fdgfdg
+                 <div class="animated fadeInDown col-md-6 paddingImgAcerca">
+                    <img  class="img-fluid imgAcerca" src="imagenes/img1.jpg">
                  </div>
                  <div class="col-md-6 paddingTexto">
                     <p class="textoAcerca">En New Print somos una empresa 100% mexicana con un interés por brindar calidad 
@@ -108,23 +109,48 @@
             <span>Estos son los servicios a nuestros clientes:</span>
           </div>
           <div class="row">
-              <div class="col-md-4">
-                  1
+              <div class="col-md-4 paddingIcono">
+                <i class="fas fa-burn tamañoIcono"></i><p>Barniz Termosellante<p>
+                  <ul>
+                    <li><i class="fas fa-check ul-pal"></i>Base Agua</li>
+                    <li><i class="fas fa-check ul-pal"></i>Base Solvente</li>
+                  </ul>
               </div>
-              <div class="col-md-4">
-                  2
+              <div class="col-md-4 paddingIcono">
+                <i class="fas fa-copy tamañoIcono"></i><p>Barniz U.V Mate y Brillante</p>
+                <ul>
+                  <li><i class="fas fa-check ul-pal"></i>Plasta</li>
+                  <li><i class="fas fa-check ul-pal"></i>Reserva</li>
+                  <li><i class="fas fa-check ul-pal"></i>Registro Fino</li>
+                  <li><i class="fas fa-check ul-pal"></i>Especialidades</li>
+                  <li><i class="fas fa-check ul-pal"></i>Serigrafia</li>
+                </ul>
               </div>
-              <div class="col-md-4">
-                 3 
+              <div class="col-md-4 paddingIcono">
+                <i class="fas fa-book-open tamañoIcono"></i><p>Laminado Termico</p>
+                <ul>
+                  <li><i class="fas fa-check ul-pal"></i>Mate</li>
+                  <li><i class="fas fa-check ul-pal"></i>Brillante</li>
+                  <li><i class="fas fa-check ul-pal"></i>Metalizado</li>
+                  <li><i class="fas fa-check ul-pal"></i>3D</li>
+                  <li><i class="fas fa-check ul-pal"></i>Especializado</li>
+                </ul>
               </div>
           </div>
         </section>
    </div>
    <!--TERMINA CONTENEDOR DE SERVICIOS-->
-
+   <div class="fondocontenedores">
+      <section class="container">
+         <div class="titlePrincipales col-md-12">
+              <span>Galeria</span>
+         </div>
+      </section>
+   </div>
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrip.js"></script>
 </body>
 </html>
