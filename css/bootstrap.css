@@ -3078,17 +3078,17 @@ fieldset:disabled a.btn {
 
 .btn-outline-dark {
   color: #3EC1D5;
-  border-color: black;
+  border-color: #3EC1D5;
 }
 
 .btn-outline-dark:hover {
   color: #fff;
   background-color: #3EC1D5;
-  border-color: black;
+  border-color: 3EC1D5;
 }
 
 .btn-outline-dark:focus, .btn-outline-dark.focus {
-  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(40, 221, 253, 0.5);
 }
 
 .btn-outline-dark.disabled, .btn-outline-dark:disabled {
@@ -3105,7 +3105,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(49, 189, 245, 0.5);
 }
 
 .btn-link {

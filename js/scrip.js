@@ -18,7 +18,7 @@ $(function() {
     $(".filter").click(function(){
     selectedClass = $(this).attr("data-rel");
             
-            $("#galeria").fadeTo(100, 0.5);
+            $("#galeria").fadeTo(100, 0.9);
             $("#galeria div").removeClass('animation').not("."+selectedClass).fadeOut();
             
     setTimeout(function() {

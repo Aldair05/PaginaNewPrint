@@ -198,7 +198,7 @@ ul{
 }
 
 .marg-btn{
-  margin-right: 15px;
+  margin-right: 4px;
 }
 
 .padding-menuGaleria{
@@ -274,7 +274,12 @@ ul{
   text-align: center;
 }
 
+.btn-tamaño{
 
+  font-size: 15px;
+  height: 38px;
+
+}
 
 
 /* INICIO DE MEDIASQUERYS */
@@ -304,7 +309,6 @@ ul{
   
   }
 
-
   .font-titulo{
     font-family:'Open Sans', sans-serif;
     font-size: 150%;
@@ -333,6 +337,10 @@ ul{
     width: 60%;
   }
 
+  .btn-tamaño{
+    font-size: 10px;
+    height: 25px;
+  }
 
 
 

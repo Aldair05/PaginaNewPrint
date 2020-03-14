@@ -147,48 +147,50 @@
               <span>Galeria</span>
          </div>
          <div>
+           <div class="container">
             <div class="row ">
-              <div class="col-md-12 d-flex justify-content-center padding-menuGaleria">
-                  <button type="button" class="btn btn-outline-dark filter marg-btn" data-rel="all" >Todos</button>
-                  <button type="button" class="btn btn-outline-dark filter marg-btn" data-rel="Termosellante">Termosellante</button>
-                  <button type="button" class="btn btn-outline-dark filter marg-btn" data-rel="Barniz">Barniz</button>
-                  <button type="button" class="btn btn-outline-dark filter marg-btn" data-rel="Laminado">Laminado</button>
+              <div class="col-md-12  d-flex justify-content-center padding-menuGaleria">
+                    <button type="button" class="btn btn-outline-dark filter marg-btn btn-tamaño" data-rel="all" >Todos</button>
+                    <button type="button" class="btn btn-outline-dark filter marg-btn btn-tamaño" data-rel="Termosellante">Termosellante</button>
+                    <button type="button" class="btn btn-outline-dark filter marg-btn btn-tamaño" data-rel="Barniz">Barniz</button>
+                    <button type="button" class="btn btn-outline-dark filter marg-btn btn-tamaño" data-rel="Laminado">Laminado</button>
                </div>
             </div>
+           </div>
          </div>
-         <div class="galeria">
-              <div class="contenedor-imagenes">
-                  <div class="imagen">
+         <div class="galeria" >
+              <div class="contenedor-imagenes " id="galeria">
+                  <div class="imagen animation all Termosellante">
                       <img src="imagenes/galeria1.jpg" alt="">
                       <div class="overlay">
                             <h2>Hola</h2>
                       </div>
                   </div>
-                  <div class="imagen">
+                  <div class="imagen animation all Termosellante ">
                       <img src="imagenes/galeria2.jpg" alt="">
                       <div class="overlay">
                           <h2>Diseño</h2>
                       </div>
                   </div>
-                  <div class="imagen">
+                  <div class="imagen animation all Barniz">
                       <img src="imagenes/galeria3.jpg">
                       <div class="overlay">
                         <h2>Barniz</h2>
                       </div>
                   </div>
-                  <div class="imagen">
+                  <div class="imagen animation all Barniz">
                       <img src="imagenes/galeria4.jpg">
                       <div class="overlay">
                          <h2>Laminado</h2> 
                       </div>
                   </div>
-                  <div class="imagen">
+                  <div class="imagen animation all Laminado">
                        <img src="imagenes/galeria5.jpg">
                        <div class="overlay">
                           <h2>Diseño</h2>
                        </div>
                   </div>
-                  <div class="imagen">
+                  <div class="imagen animation all Laminado">
                     <img src="imagenes/imprenta1.jpg">
                     <div class="overlay">
                         <h2>Barniz</h2>
@@ -242,7 +244,7 @@
                         <label for="exampleFormControlTextarea1">Comentarios</label>
                         <textarea type="text" name="comentario" id="comentario" class="form-control" id="exampleFormControlTextarea1" placeholder="Escribe tus Comentarios" rows="3"></textarea>   
                      </div>
-                     <div class="form-group btn-enviar">
+                     <div class="form-group btn-enviar ">
                         <button type="submit" value="Enviar" name="submit" class="btn btn-outline-dark tam-btn-enviar">Enviar</button>
                       </div>
                  </form>
@@ -254,6 +256,7 @@
    </div>
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scrip.js"></script>
