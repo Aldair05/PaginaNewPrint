@@ -12,6 +12,9 @@ $(window).scroll(function() {
 /*Fin de funcion de menu Navegador*/
 
 
+
+
+
 /* Inicio de Funcion de filtrado Imagenes*/
 $(function() {
     var selectedClass = "";
@@ -32,8 +35,6 @@ $(function() {
 
 
 
-
- 
 
 /* FIn de Funcion de filtrado Imagenes*/
 
@@ -56,3 +57,45 @@ $('div .enlace').click(function(e){
 });
 
 /*Fin de Funcion de transicion enlaces*/
+
+
+//Inicia la funcion al hacer scroll 
+
+
+//Variables Constantes
+const animado = document.querySelectorAll('.aparece');
+const animadoServicios = document.querySelectorAll('.apareceServicios');
+
+
+
+//addeventListener 
+window.addEventListener('scroll', mostrarScrollAcerca);
+// window.addEventListener('scroll',mostrarScrollServicios);
+
+
+//Funciones
+function mostrarScrollAcerca() {
+    let scrollTop = document.documentElement.scrollTop;
+    for (let i = 0 ; i < animado.length; i++){
+            let alturaAnimado = animado[i].offsetTop;
+            if (alturaAnimado - 900 < scrollTop) {
+                // animado[i].style.opacity = 1;
+                animado[i].classList.add('fadeInDown');
+            }
+    }
+}
+
+// function mostrarScrollServicios() {
+//     let scrollTop = document.documentElement.scrollTop;
+//     for (let i = 0 ; i < animadoServicios.length; i++){
+//             let alturaAnimado = animadoServicios[i].offsetTop;
+//             if (alturaAnimado - 200 < scrollTop) {
+//                 // animado[i].style.opacity = 1;
+//                 animadoServicios[i].classList.add('pulse');
+//             }
+//     }
+// }
+
+
+
+
