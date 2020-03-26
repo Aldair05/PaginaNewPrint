@@ -85,17 +85,123 @@ function mostrarScrollAcerca() {
     }
 }
 
-// function mostrarScrollServicios() {
-//     let scrollTop = document.documentElement.scrollTop;
-//     for (let i = 0 ; i < animadoServicios.length; i++){
-//             let alturaAnimado = animadoServicios[i].offsetTop;
-//             if (alturaAnimado - 200 < scrollTop) {
-//                 // animado[i].style.opacity = 1;
-//                 animadoServicios[i].classList.add('pulse');
-//             }
-//     }
-// }
+//Validando El formulario de contacto 
+//Variables 
+const nombre = document.getElementById('nombre');
+const email = document.getElementById('email');
+const asunto = document.getElementById('asunto');
+const comentario = document.getElementById('comentario');
+const btnEnviar = document.getElementById('enviar');
+const formularioEnviar = document.getElementById('formularioEnviar');
+const btnReset = document.getElementById('reset');
+
+//EventListener 
+eventListener();
+
+function eventListener(){
+    //Inicio de la aplicacion y desabilita el boton enviar
+    document.addEventListener('DOMContentLoaded',inicioApp);
+
+    //Campos del formulario 
+    nombre.addEventListener('blur',validarCampo);
+    email.addEventListener('blur',validarCampo);
+    asunto.addEventListener('blur',validarCampo);
+    comentario.addEventListener('blur',validarCampo);
+
+    //Boton de enviar en el submit 
+    btnEnviar.addEventListener('click',enviarEmail);
+
+    //Boton que resetea el formulario
+    btnReset.addEventListener('click',resetFormulario);
+
+
+}
+//Funciones
+
+function inicioApp(){
+    //deshabilita el boton enviar 
+    btnEnviar.disabled = true; 
+
+}
 
 
 
+//valida que el campo tenga algo escrito 
+function validarCampo() {
+    
+    //Se valida la logitud del texto y que no este vacio 
+    validarLongitud(this);
+
+    
+    //Validar unicamente el email 
+    if (this.type === 'email'){
+        validarEmail(this);
+    }
+
+    let errores = document.querySelectorAll('.error');
+    if(nombre.value !== '' && email.value !== '' && asunto.value !== '' && comentario.value !== ''){
+        if(errores.length === 0){
+            btnEnviar.disabled = false;
+        }    
+    }
+}
+
+function enviarEmail(e){
+
+    //spinner al presionar Enviar
+    const spinnerGif = document.querySelector('#spinner');
+    spinnerGif.style.display = 'block';
+
+    //crear el gig Email
+    const enviado = document.createElement('img');
+    enviado.src = 'imagenes/mail.gif';
+    enviado.style.width = '150px';
+    enviado.style.margin = '0 auto'; 
+    enviado.style.display = 'block';
+    
+
+    //Ocultar Spinner y mostrar gif de enviado 
+    setTimeout(function() {
+            spinnerGif.style.display = 'none';
+            document.querySelector('#loaders').appendChild( enviado );
+            setTimeout(function(){
+                enviado.remove();
+                formularioEnviar.reset();
+            },5000);
+    },3000);
+
+    e.preventDefault();
+}
+
+//Resetea el formulario
+function resetFormulario(e){
+    
+    formularioEnviar.reset();
+    e.preventDefault();
+
+}
+//Verifica la longitu del texto en elos campos
+function validarLongitud(campo){
+        
+    if(campo.value.length > 0){
+        campo.style.borderColor = 'green';
+        campo.classList.remove('error');
+    }else{
+        campo.style.borderColor = 'red';
+        campo.classList.add('error');
+    }
+}
+
+
+function validarEmail(campo){
+    const mensaje = campo.value;
+    
+    if(mensaje.indexOf('@') !== -1){
+        campo.style.borderColor = 'green';
+        campo.classList.remove('error');
+    }else{
+        campo.style.borderColor = 'red';
+        campo.classList.add('error');
+    }
+}
 

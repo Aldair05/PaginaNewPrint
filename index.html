@@ -253,26 +253,31 @@
         
           <div class="row justify-content-center animated aparece delay-1s">
             <div class="col-md-6 ">
-                 <form action="Enviar.php" method="POST"><!--Determina el tipo de informacion y jala el archivo php-->
+                 <form action="Enviar.php" id="formularioEnviar" method="POST"><!--Determina el tipo de informacion y jala el archivo php-->
                      <div class="form-group">
                        <label for="formGroupExampleInput">Nombre</label>
-                       <input type="name" name="nombre"  class="form-control" id="InputName4" placeholder="Escribe tu Nombre">
+                       <input type="name" name="nombre"  class="form-control" id="nombre" placeholder="Escribe tu Nombre">
                      </div>
                      <div class="form-group">
                        <label for="formGroupExampleInput2">Correo</label>
-                       <input type="email" name="correo"  class="form-control" id="InputCorreo2" placeholder="Escribe tu Correo">
+                       <input type="email" name="correo"  class="form-control" id="email" placeholder="Escribe tu Correo">
                      </div>
                      <div class="form-group">
                        <label for="formGroupExampleInput2">Asunto</label>
-                       <input type="text" name="asunto"  class="form-control" id="InputAsunto2" placeholder="Escribe el Asunto">
+                       <input type="text" name="asunto"  class="form-control" id="asunto" placeholder="Escribe el Asunto">
                      </div>
                      <div class="form-group">
                         <label for="exampleFormControlTextarea1">Comentarios</label>
                         <textarea type="text" name="comentario" id="comentario" class="form-control" id="exampleFormControlTextarea1" placeholder="Escribe tus Comentarios" rows="3"></textarea>   
                      </div>
-                     <div class="form-group btn-enviar ">
-                        <button type="submit" value="Enviar" name="submit" class="btn btn-outline-dark tam-btn-enviar">Enviar</button>
-                      </div>
+                     <div class="row" id="loaders">
+                        <img src="imagenes/spinner.gif" id="spinner" width="150">  
+                     </div>
+                     <div class=" row form-group  ">
+                        <div class=" col-md-6 btn-enviar">
+                          <button type="submit" id="enviar" name="submit" class="btn btn-outline-dark tam-btn-enviar">Enviar</button>
+                        </div> 
+                     </div>
                  </form>
             </div>
           </div>

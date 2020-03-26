@@ -286,6 +286,7 @@ ul{
 
 .btn-enviar{
   text-align: center;
+  margin : 0 auto;
 }
 
 .btn-tamaño{
@@ -294,6 +295,13 @@ ul{
   height: 38px;
 
 }
+
+#spinner{
+  display: none;
+  margin: 0 auto;
+}
+
+
 
 
 /* INICIO DE MEDIASQUERYS */
@@ -355,8 +363,6 @@ ul{
     font-size: 10px;
     height: 25px;
   }
-
-
 
 }
 
