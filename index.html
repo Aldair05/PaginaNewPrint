@@ -140,14 +140,14 @@
    <!--TERMINA CONTENEDOR DE SERVICIOS-->
    <!--INICIA CONTENEDOR DE GALERIA-->
    <div class="" id="menu-galeria">
-      <section class="container animated aparece delay-1s">
-         <div class="titlePrincipales col-md-12 ">
+      <section class="container ">
+         <div class="titlePrincipales col-md-12 animated aparece delay-1s">
               <span>Galeria</span>
          </div>
          <div>
            <div class="container">
             <div class="row ">
-              <div class="col-md-12  d-flex justify-content-center padding-menuGaleria">
+              <div class="col-md-12  d-flex justify-content-center padding-menuGaleria animated aparece delay-1s">
                     <button type="button" class="btn btn-outline-dark filter marg-btn btn-tamaño" data-rel="all" >Todos</button>
                     <button type="button" class="btn btn-outline-dark filter marg-btn btn-tamaño" data-rel="Termosellante">Termosellante</button>
                     <button type="button" class="btn btn-outline-dark filter marg-btn btn-tamaño" data-rel="Barniz">Barniz</button>
@@ -156,7 +156,7 @@
             </div>
            </div>
          </div>
-         <div class="galeria"  >
+         <div class="galeria animated aparece delay-1s">
               <div class="contenedor-imagenes" id="galeria">
                 <!-- Imagenes de termosellante -->
                   <div class="imagen animation all Termosellante">
@@ -263,8 +263,8 @@
                        <input type="email" name="correo"  class="form-control" id="email" placeholder="Escribe tu Correo">
                      </div>
                      <div class="form-group">
-                       <label for="formGroupExampleInput2">Asunto</label>
-                       <input type="text" name="asunto"  class="form-control" id="asunto" placeholder="Escribe el Asunto">
+                       <label for="formGroupExampleInput2">Telefono</label>
+                       <input type="text" name="telefono"  class="form-control" id="telefono" placeholder="Escribe tu telefono">
                      </div>
                      <div class="form-group">
                         <label for="exampleFormControlTextarea1">Comentarios</label>
@@ -273,11 +273,9 @@
                      <div class="row" id="loaders">
                         <img src="imagenes/spinner.gif" id="spinner" width="150">  
                      </div>
-                     <div class=" row form-group  ">
-                        <div class=" col-md-6 btn-enviar">
-                          <button type="submit" id="enviar" name="submit" class="btn btn-outline-dark tam-btn-enviar">Enviar</button>
-                        </div> 
-                     </div>
+                     <div class=" form-group col-md-6 btn-enviar">
+                        <button type="submit" id="enviar" name="submit" class="btn btn-outline-dark tam-btn-enviar">Enviar</button>
+                     </div> 
                  </form>
             </div>
           </div>
@@ -285,7 +283,7 @@
    </div>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- <script src="js/popper.min.js"></script> -->
+   <!-- <script src="js/popper.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scrip.js"></script>
 </body>

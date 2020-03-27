@@ -89,7 +89,7 @@ function mostrarScrollAcerca() {
 //Variables 
 const nombre = document.getElementById('nombre');
 const email = document.getElementById('email');
-const asunto = document.getElementById('asunto');
+const telefono = document.getElementById('telefono');
 const comentario = document.getElementById('comentario');
 const btnEnviar = document.getElementById('enviar');
 const formularioEnviar = document.getElementById('formularioEnviar');
@@ -105,14 +105,14 @@ function eventListener(){
     //Campos del formulario 
     nombre.addEventListener('blur',validarCampo);
     email.addEventListener('blur',validarCampo);
-    asunto.addEventListener('blur',validarCampo);
+    telefono.addEventListener('blur',validarCampo);
     comentario.addEventListener('blur',validarCampo);
 
     //Boton de enviar en el submit 
     btnEnviar.addEventListener('click',enviarEmail);
 
-    //Boton que resetea el formulario
-    btnReset.addEventListener('click',resetFormulario);
+   
+    
 
 
 }
@@ -139,9 +139,10 @@ function validarCampo() {
     }
 
     let errores = document.querySelectorAll('.error');
-    if(nombre.value !== '' && email.value !== '' && asunto.value !== '' && comentario.value !== ''){
+    if(nombre.value !== '' && email.value !== '' && telefono.value !== '' && comentario.value !== ''){
         if(errores.length === 0){
             btnEnviar.disabled = false;
+            
         }    
     }
 }
@@ -167,20 +168,16 @@ function enviarEmail(e){
             setTimeout(function(){
                 enviado.remove();
                 formularioEnviar.reset();
+                
             },5000);
     },3000);
-
-    e.preventDefault();
-}
-
-//Resetea el formulario
-function resetFormulario(e){
     
-    formularioEnviar.reset();
-    e.preventDefault();
-
+   
 }
-//Verifica la longitu del texto en elos campos
+
+
+
+//Verifica la longitu del texto en los campos
 function validarLongitud(campo){
         
     if(campo.value.length > 0){
