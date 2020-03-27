@@ -26,13 +26,13 @@
             $mail->isSMTP();                                      // Protocolo para enviar 
             $mail->Host = 'smtp.gmail.com';                       // servicio de correo  que se va utilizar 
             $mail->SMTPAuth = true;                               // 
-            $mail->Username = 'aldair.uaem@gmail.com';          // correo desde donde se va enviar el correo 
+            $mail->Username = 'newPrintConsultas@gmail.com';          // correo desde donde se va enviar el correo 
             $mail->Password = '';                      // contraseña 
             $mail->SMTPSecure = 'tls';                            // 
             $mail->Port = 587;                                    // 
             //Recipients
-            $mail->setFrom('aldair.uaem@gmail.com', 'Aldair');  // desde donde se va enviar 
-            $mail->addAddress('aldair.uaem@gmail.com');        // a quien se le va enviar el correo 
+            $mail->setFrom('newPrintConsultas@gmail.com','$nombre');  // desde donde se va enviar 
+            $mail->addAddress('newPrintConsultas@gmail.com');        // a quien se le va enviar el correo 
             //Contenido para  Permitir hacer HTML
             $mail->isHTML(true);                                  
             $mail->Subject = 'Asunto muy importante';
