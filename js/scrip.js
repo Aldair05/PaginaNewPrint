@@ -12,26 +12,43 @@ $(window).scroll(function() {
 
 
 /* Inicio de Funcion de filtrado Imagenes*/
-$(function() {
-    var selectedClass = "";
-    $(".filter").click(function(){
-    selectedClass = $(this).attr("data-rel");
-            
-            $("#galeria").fadeTo(100, 0.9);
-            $("#galeria div").removeClass('animation').not("."+selectedClass).fadeOut();
-            
-            
-    setTimeout(function() {
-             $("."+selectedClass).fadeIn().addClass('animation');
-            //Crear elemento
-            // const overlay = document.querySelector('#img1 .overlay');
-            // overlay.style.display = 'block';
+(function(){
+    $(document).ready(function(){
+        $(".btn-menu").click(function(){
+            var filtro = $(this).attr("data-filter");
+            if(filtro == "todos"){
+                $(".imagen").show(500);
+            }else{
+                $(".imagen").not("."+ filtro).hide(500);
+                $(".imagen").filter("."+ filtro).show(500);
+            }
+        });
+    });
+}())
 
-            // $("#galeria").fadeTo(300, 1);
-            // $(this).addClass('active').siblings().removeClass('active');
-    }, 300);
-  });
-});
+
+
+
+// $(function() {
+//     var selectedClass = "";
+//     $(".filter").click(function(){
+//     selectedClass = $(this).attr("data-rel");
+            
+//             $("#galeria").fadeTo(100, 0.9);
+//             $("#galeria div").removeClass('animation').not("."+selectedClass).fadeOut();
+            
+            
+//     setTimeout(function() {
+//              $("."+selectedClass).fadeIn().addClass('animation');
+//             //Crear elemento
+//             // const overlay = document.querySelector('#img1 .overlay');
+//             // overlay.style.display = 'block';
+
+//             // $("#galeria").fadeTo(300, 1);
+//             // $(this).addClass('active').siblings().removeClass('active');
+//     }, 300);
+//   });
+// });
 
 
 
