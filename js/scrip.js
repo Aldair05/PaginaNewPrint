@@ -8,11 +8,7 @@ $(window).scroll(function() {
         }
 });
 
-
 /*Fin de funcion de menu Navegador*/
-
-
-
 
 
 /* Inicio de Funcion de filtrado Imagenes*/
@@ -24,10 +20,15 @@ $(function() {
             $("#galeria").fadeTo(100, 0.9);
             $("#galeria div").removeClass('animation').not("."+selectedClass).fadeOut();
             
+            
     setTimeout(function() {
-            $("."+selectedClass).fadeIn().addClass('animation');
-            $("#galeria").fadeTo(300, 1);
-            $(this).addClass('active').siblings().removeClass('active');
+             $("."+selectedClass).fadeIn().addClass('animation');
+            //Crear elemento
+            // const overlay = document.querySelector('#img1 .overlay');
+            // overlay.style.display = 'block';
+
+            // $("#galeria").fadeTo(300, 1);
+            // $(this).addClass('active').siblings().removeClass('active');
     }, 300);
   });
 });
@@ -59,7 +60,7 @@ $('div .enlace').click(function(e){
 /*Fin de Funcion de transicion enlaces*/
 
 
-//Inicia la funcion al hacer scroll 
+
 
 
 //Variables Constantes
@@ -110,11 +111,6 @@ function eventListener(){
 
     //Boton de enviar en el submit 
     btnEnviar.addEventListener('click',enviarEmail);
-
-   
-    
-
-
 }
 //Funciones
 
@@ -123,8 +119,6 @@ function inicioApp(){
     btnEnviar.disabled = true; 
 
 }
-
-
 
 //valida que el campo tenga algo escrito 
 function validarCampo() {
@@ -148,7 +142,6 @@ function validarCampo() {
 }
 
 function enviarEmail(e){
-
     //spinner al presionar Enviar
     const spinnerGif = document.querySelector('#spinner');
     spinnerGif.style.display = 'block';
@@ -178,8 +171,7 @@ function enviarEmail(e){
 
 
 //Verifica la longitu del texto en los campos
-function validarLongitud(campo){
-        
+function validarLongitud(campo){      
     if(campo.value.length > 0){
         campo.style.borderColor = 'green';
         campo.classList.remove('error');
@@ -188,7 +180,6 @@ function validarLongitud(campo){
         campo.classList.add('error');
     }
 }
-
 
 function validarEmail(campo){
     const mensaje = campo.value;

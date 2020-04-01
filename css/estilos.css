@@ -301,8 +301,41 @@ ul{
   margin: 0 auto;
 }
 
+.modal-container{
+  display: inline-block;
+  position: relative;
+}
 
+.modal-container .active{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:0;
+  left:0;
+  overflow-y: scroll;
 
+}
+
+.modal-container img{
+  z-index: 1;
+}
+.modal-container.active::after{
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 0;
+}
+
+.modal-text{
+  margin: 0 auto;
+}
 
 /* INICIO DE MEDIASQUERYS */
 
