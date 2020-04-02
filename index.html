@@ -418,51 +418,52 @@
 
    </div>
    <!--TERMINA CONTENEDOR DE GALERIA-->
-   <div class="fondocontenedores" id="menu-contactenos">
-     <section class="container">
+   <div class="img-contacto" id="menu-contactenos">
+     <section class="container info-contacto">
         <div class="titlePrincipales col-md-12 animated aparece delay-1s">
           <span>Contacto</span>
         </div>
-        <div class="row">
+        <div class="row info-contacto">
           <div class="col-lg-6 paddingIcono colorCaja animated aparece delay-1s">
-            <i class="fas fa-map-marker-alt tamañoIcono"></i><p>Nuestra dirección:</p> 
-              <p> Av. Dr. Covarrubias Col. San Isidro
+            <i class="fas fa-map-marker-alt tamañoIcono"></i><p class="color-text-contacto">Nuestra dirección:</p> 
+              <p class="color-text-contacto"> Av. Dr. Covarrubias Col. San Isidro
                 #1147 C.P. 56617 Valle de Chalco Solidaridad
                 Estado de México
               </p>
           </div>
           <div class="col-lg-3 paddingIcono colorCaja animated aparece delay-1s">
-            <i class="fas fa-envelope tamañoIcono"></i><p>Correo Electronico:</p>
-              <p>reynaldo.newprint@gmail.com</p>
-              <p>erick.newprint@gmail.com</p>
+            <i class="fas fa-envelope tamañoIcono"></i><p class="color-text-contacto">Correo Electronico:</p>
+              <p class="color-text-contacto">reynaldo.newprint@gmail.com</p>
+              <p class="color-text-contacto">erick.newprint@gmail.com</p>
           </div>
           <div class="col-lg-2 paddingIcono colorCaja animated aparece delay-1s">
-            <i class="fas fa-mobile-alt tamañoIcono"></i><p>Telefonos:</p>
-              <p>59-71-88-01</p>
-              <p>55-35-94-82-15</p>
+            <i class="fas fa-mobile-alt tamañoIcono"></i><p class="color-text-contacto">Telefonos:</p>
+              <p class="color-text-contacto">59-71-88-01</p>
+              <p class="color-text-contacto">55-35-94-82-15</p>
               <p></p>
           </div>
+
         </div>
         
-          <div class="row justify-content-center animated aparece delay-1s">
+          <div class="row  justify-content-center animated aparece delay-1s">
             <div class="col-md-6 ">
-              <div class="card">
+              <div class="card margin-card">
                   <div class="card-body">
                     <form action="Enviar.php" id="formularioEnviar" method="POST"><!--Determina el tipo de informacion y jala el archivo php-->
                       <div class="form-group">
-                        <label for="formGroupExampleInput">Nombre</label>
+                        <label for="formGroupExampleInput" class="color-text-contacto">Nombre</label>
                         <input type="name" name="nombre"  class="form-control" id="nombre" placeholder="Escribe tu Nombre">
                       </div>
                       <div class="form-group">
-                        <label for="formGroupExampleInput2">Correo</label>
+                        <label for="formGroupExampleInput2" class="color-text-contacto">Correo</label>
                         <input type="email" name="correo"  class="form-control" id="email" placeholder="Escribe tu Correo">
                       </div>
                       <div class="form-group">
-                        <label for="formGroupExampleInput2">Telefono</label>
+                        <label for="formGroupExampleInput2" class="color-text-contacto">Telefono</label>
                         <input type="text" name="telefono"  class="form-control" id="telefono" placeholder="Escribe tu telefono">
                       </div>
                       <div class="form-group">
-                         <label for="exampleFormControlTextarea1">Comentarios</label>
+                         <label for="exampleFormControlTextarea1" class="color-text-contacto">Comentarios</label>
                          <textarea type="text" name="comentario" id="comentario" class="form-control" id="exampleFormControlTextarea1" placeholder="Escribe tus Comentarios" rows="3"></textarea>   
                       </div>
                       <div class="row" id="loaders">
