@@ -259,6 +259,7 @@ ul{
   height: 0;
   transition: .5 ease;
   overflow :hidden;
+  transition: 0.8s ease-in-out;
 }
 
 .overlay h2{
@@ -354,6 +355,8 @@ ul{
   background-image: url(../imagenes/city.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   content: '';
   height: 100%;
   width: 100%;
