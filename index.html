@@ -1,488 +1,529 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 </head>
-    <body>
-      <!--COMIENZA EL MENU-->
-    <div class="" id="menu-navegacion">
-      <nav id= "menu" class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="col-md-2" id="logo">
-          <img class="img-fluid" src="imagenes/Logo-Print3.png">
-        </div>
-        <div class="collapse col-md-8 navbar-collapse justify-content-center menu" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item efectoMenu">
-              <a class="nav-link  uno" href="#menu-navegacion">Inicio </a>
-            </li>
-            <li class="nav-item efectoMenu">
-              <a class="nav-link  dos" href="#menu-acerca-de">Acerca de</a>
-            </li>
-            <li class="nav-item efectoMenu">
-              <a class="nav-link " href="#menu-servicios">Servicios</a>
-            </li>
-            <li class="nav-item efectoMenu">
-              <a class="nav-link" href="#menu-galeria">Galeria</a>
-            </li>
-            <li class="nav-item efectoMenu">
-              <a class="nav-link" href="#menu-contactenos">Contacto</a>
-            </li>
-          </ul>
-        </div>
-       </nav>
+
+<body>
+  <!--COMIENZA EL MENU-->
+  <div class="barra">
+    <div class="contenedor clearfix">
+      <div class="logo">
+        <img src="/imagenes/Logo-Print3.png" alt="">
+      </div>
+
+      <div class="menu-movil">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navegacion-principal">
+        <a href="">Inicio</a>
+        <a href="">Acerca de</a>
+        <a href="">Servicios</a>
+        <a href="">Galeria</a>
+        <a href="">Contacto</a>
+      </nav>
     </div>
-   <!--TERMINA EL MENU-->
+  </div>
+
+  <!--TERMINA EL MENU-->
   <!--INICIAN MENSAJES Y BOTON-->
   <div>
     <section class="portada">
-      <div class="col-sm-12 animated bounceInDown contBienvenido justify-content-center delay-1s">
-         <span class="font-tituloConoce">Conoce</span> <span class="font-titulo">New Print!</span>
+      <div class="col-sm-12 animated bounceInDown contBienvenido  delay-1s">
+        <span class="font-tituloConoce">Conoce</span> <span class="font-titulo">New Print!</span>
       </div>
-      <div class="animated fadeInLeft contProfesionales justify-content-center delay-1s">
-        <span  class="lineaContenido">Profesionales en acabados</span>
+      <div class="animated fadeInLeft contProfesionales delay-1s">
+        <span class="lineaContenido">Profesionales en acabados</span>
+        <div class="content-iconos">
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
       </div>
-       <div class=" animated fadeInUp styleButton justify-content-center delay-1s">
-         <button type="button" id="btnServicios" class="btn btn-info"><a href="#menu-servicios" class="txtColor">Servicios</a></button>
-       </div>
+      <div class=" animated fadeInUp styleButton justify-content-center delay-1s">
+        <!-- <button type="button" id="btnServicios" class="btn btn-info"><a href="#menu-servicios"
+            class="txtColor">Servicios</a></button> -->
+      </div>
     </section>
   </div>
   <!--TERMINAN MENSAJES Y BOTON-->
 
   <!--INICIA CONTENEDOR ACERCA DE-->
 
-   <div class="" id="menu-acerca-de">
-     <section class="container" >
-       <div class=" animated aparece titlePrincipales delay-1s">
-         <span>Acerca de la empresa</span>
-       </div>
-       <div>
-          <div class="">
-            <div class="row">
-                 <div class="animated col-md-6 paddingImgAcerca aparece delay-1s">
-                    <img  class="img-fluid imgAcerca" src="imagenes/img1.jpg">
-                 </div>
-                 <div class="col-md-6 paddingTexto animated  aparece delay-1s">
-                    <p class="textoAcerca">En New Print somos una empresa 100% mexicana con un interés por brindar calidad 
-                      en nuestro procesos y servicios lo cual nos hace una empresa encaminada al éxito continuo 
-                      brindando a nuestros clientes la confianza y tranquilidad de los trabajos que realizamos 
-                      ya que estamos en constante supervisión y actualización de los materiales que utilizamos así 
-                      como una mano de obra calificada durante nuestros procesos ofreciendo así un producto  
-                      terminado de calidad. Dándole un valor agregado al trabajo y procesos de nuestros clientes. 
-                    </p>
-                 </div>
+  <div class="" id="menu-acerca-de">
+    <section class="container">
+      <div class=" animated aparece titlePrincipales delay-1s">
+        <h2>Acerca de la empresa</h2>
+      </div>
+      <div>
+        <div class="">
+          <div class="row">
+            <div class="animated col-md-6 paddingImgAcerca aparece delay-1s">
+              <img class="img-fluid imgAcerca" src="imagenes/img1.jpg">
             </div>
-            <div class="row">
-                <div class="titleMisionVision col-md-6">
-                    <p>MISION</p>
-
-                </div>
-                <div class=" titleMisionVision col-md-6">
-                   <p>VISION</p>
-
-                </div>
+            <div class="col-md-6 paddingTexto animated  aparece delay-1s">
+              <p class="textoAcerca">En <span>New Print</span> somos una empresa 100% mexicana con un interés por brindar calidad
+                en nuestro procesos y servicios lo cual nos hace una empresa encaminada al éxito continuo
+                brindando a nuestros clientes la confianza y tranquilidad de los trabajos que realizamos
+                ya que estamos en constante supervisión y actualización de los materiales que utilizamos así
+                como una mano de obra calificada durante nuestros procesos ofreciendo así un producto
+                terminado de calidad. Dándole un valor agregado al trabajo y procesos de nuestros clientes.
+              </p>
             </div>
-          </div>
-       </div>
-     </section>
-   </div>
-   <!--TERMINAN CONTENEDOR ACERCA DE-->
-   <!--INICIA CONTENEDOR SERVICIOS-->
-   <div class="fondocontenedores" id="menu-servicios">
-        <section class="container">
-          <div class=" animated titlePrincipales col-md-12 aparece delay-1s">
-                <span>Servicios</span>
-          </div>
-          <div class="subtituloServicios col-md-12">
-            <span>Estos son los servicios a nuestros clientes:</span>
           </div>
           <div class="row">
-              <div class="col-md-4 paddingIcono animated aparece delay-1s">
-                <i class="fas fa-burn tamañoIcono"></i><p>Barniz Termosellante<p>
-                  <ul>
-                    <li><i class="fas fa-check ul-pal"></i>Base Agua</li>
-                    <li><i class="fas fa-check ul-pal"></i>Base Solvente</li>
-                  </ul>
-              </div>
-              <div class="col-md-4 paddingIcono animated aparece delay-1s">
-                <i class="fas fa-copy tamañoIcono"></i><p>Barniz U.V Mate y Brillante</p>
-                <ul>
-                  <li><i class="fas fa-check ul-pal"></i>Plasta</li>
-                  <li><i class="fas fa-check ul-pal"></i>Reserva</li>
-                  <li><i class="fas fa-check ul-pal"></i>Registro Fino</li>
-                  <li><i class="fas fa-check ul-pal"></i>Especialidades</li>
-                  <li><i class="fas fa-check ul-pal"></i>Serigrafia</li>
-                </ul>
-              </div>
-              <div class="col-md-4 paddingIcono animated aparece delay-1s">
-                <i class="fas fa-book-open tamañoIcono"></i><p>Laminado Termico</p>
-                <ul>
-                  <li><i class="fas fa-check ul-pal"></i>Mate</li>
-                  <li><i class="fas fa-check ul-pal"></i>Brillante</li>
-                  <li><i class="fas fa-check ul-pal"></i>Metalizado</li>
-                  <li><i class="fas fa-check ul-pal"></i>3D</li>
-                  <li><i class="fas fa-check ul-pal"></i>Especializado</li>
-                </ul>
-              </div>
-          </div>
-        </section>
-   </div>
-   <!--TERMINA CONTENEDOR DE SERVICIOS-->
-   <!--INICIA CONTENEDOR DE GALERIA-->
-   <div class="" id="menu-galeria">
-      <section class="container ">
-         <div class="titlePrincipales col-md-12 animated aparece delay-1s">
-              <span>Galeria</span>
-         </div>
-         <div>
-           <div class="container">
-            <div class="row ">
-              <div class="col-md-12  d-flex justify-content-center padding-menuGaleria animated aparece delay-1s">
-                    <button type="button" class="btn-menu btn  btn-outline-dark filter marg-btn btn-tamaño" data-filter="todos" >Todos</button>
-                    <button type="button" class=" btn-menu btn btn-outline-dark filter marg-btn btn-tamaño" data-filter="Termosellante">Termosellante</button>
-                    <button type="button" class="btn-menu btn btn-outline-dark filter marg-btn btn-tamaño" data-filter="Barniz">Barniz</button>
-                    <button type="button" class="btn-menu  btn btn-outline-dark filter marg-btn btn-tamaño" data-filter="Laminado">Laminado</button>
-               </div>
+            <div class="titleMisionVision col-md-6">
+              <p>MISION</p>
+
             </div>
-           </div>
-         </div>
-         <div class="galeria animated aparece delay-1s">
-              <div class="contenedor-imagenes" id="galeria">
-                <!-- Imagenes de termosellante -->
-                  <div  class=" modal-container imagen animation  Termosellante"> 
-                      <img  id="img" src="imagenes/termosellante/galeria1.jpg" alt="">
-                      <div class="overlay">
-                            <h2><a data-toggle="modal" href="#modal1">Termosellante</a></h2>
-                      </div>
-                  </div>
-                  <div id="img" class="imagen animation  Termosellante ">
-                      <img src="imagenes/termosellante/galeria2.jpg" alt="">
-                      <div class="overlay">
-                          <h2><a data-toggle="modal" href="#modal2">Termosellante</a></h2>
-                      </div>
-                  </div>
-                  <div  id="img" class=" imagen animation  Termosellante ">
-                    <img src="imagenes/termosellante/galeria3.jpg" alt="">
-                    <div class="overlay">
-                        <h2><a data-toggle="modal" href="#modal3">Termosellante</a></h2>
-                    </div>
+            <div class=" titleMisionVision col-md-6">
+              <p>VISION</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--TERMINAN CONTENEDOR ACERCA DE-->
+  <!--INICIA CONTENEDOR SERVICIOS-->
+  <div class="fondocontenedores" id="menu-servicios">
+    <section class="container">
+      <div class=" animated titlePrincipales col-md-12 aparece delay-1s">
+        <h2>Servicios</h2>
+      </div>
+      <div class="subtituloServicios col-md-12">
+        <p>Estos son los servicios a nuestros clientes:</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 subtitulo-servicio paddingIcono animated aparece delay-1s">
+          <i class="fas fa-burn tamañoIcono"></i>
+          <p>Barniz Termosellante<p>
+              <ul class="lista-servicios">
+                <li><i class="fas fa-check ul-pal"></i>Base Agua</li>
+                <li><i class="fas fa-check ul-pal"></i>Base Solvente</li>
+              </ul>
+        </div>
+        <div class="col-md-4 subtitulo-servicio paddingIcono animated aparece delay-1s">
+          <i class="fas fa-copy tamañoIcono"></i>
+          <p>Barniz U.V Mate y Brillante</p>
+          <ul class="lista-servicios">
+            <li><i class="fas fa-check ul-pal"></i>Plasta</li>
+            <li><i class="fas fa-check ul-pal"></i>Reserva</li>
+            <li><i class="fas fa-check ul-pal"></i>Registro Fino</li>
+            <li><i class="fas fa-check ul-pal"></i>Especialidades</li>
+            <li><i class="fas fa-check ul-pal"></i>Serigrafia</li>
+          </ul>
+        </div>
+        <div class="col-md-4 subtitulo-servicio paddingIcono animated aparece delay-1s">
+          <i class="fas fa-book-open tamañoIcono"></i>
+          <p>Laminado Termico</p>
+          <ul class="lista-servicios">
+            <li><i class="fas fa-check ul-pal"></i>Mate</li>
+            <li><i class="fas fa-check ul-pal"></i>Brillante</li>
+            <li><i class="fas fa-check ul-pal"></i>Metalizado</li>
+            <li><i class="fas fa-check ul-pal"></i>3D</li>
+            <li><i class="fas fa-check ul-pal"></i>Especializado</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--TERMINA CONTENEDOR DE SERVICIOS-->
+  <!--INICIA CONTENEDOR DE GALERIA-->
+  <div class="" id="menu-galeria">
+    <section class="container ">
+      <div class="col-md-12 animated aparece delay-1s">
+        <h2>Galeria</h2>
+      </div>
+      <div>
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-12  d-flex justify-content-center padding-menuGaleria animated aparece delay-1s">
+              <button type="button" class="btn-menu btn  btn-outline-dark filter marg-btn btn-tamaño"
+                data-filter="todos">Todos</button>
+              <button type="button" class=" btn-menu btn btn-outline-dark filter marg-btn btn-tamaño"
+                data-filter="Termosellante">Termosellante</button>
+              <button type="button" class="btn-menu btn btn-outline-dark filter marg-btn btn-tamaño"
+                data-filter="Barniz">Barniz</button>
+              <button type="button" class="btn-menu  btn btn-outline-dark filter marg-btn btn-tamaño"
+                data-filter="Laminado">Laminado</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="galeria animated aparece delay-1s">
+        <div class="contenedor-imagenes" id="galeria">
+          <!-- Imagenes de termosellante -->
+          <div class=" modal-container imagen animation  Termosellante">
+            <img id="img" src="imagenes/termosellante/galeria1.jpg" alt="">
+            <div class="overlay">
+              <h2><a data-toggle="modal" href="#modal1">Termosellante</a></h2>
+            </div>
+          </div>
+          <div id="img" class="imagen animation  Termosellante ">
+            <img src="imagenes/termosellante/galeria2.jpg" alt="">
+            <div class="overlay">
+              <h2><a data-toggle="modal" href="#modal2">Termosellante</a></h2>
+            </div>
+          </div>
+          <div id="img" class=" imagen animation  Termosellante ">
+            <img src="imagenes/termosellante/galeria3.jpg" alt="">
+            <div class="overlay">
+              <h2><a data-toggle="modal" href="#modal3">Termosellante</a></h2>
+            </div>
+          </div>
+          <!-- IMAGENES DE  BARNIZ -->
+          <div class="imagen animation  Barniz">
+            <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante1.jpg">
+            <div class="overlay">
+              <h2><a data-toggle="modal" href="#modal4">Barniz</a></h2>
+            </div>
+          </div>
+          <div class="imagen animation  Barniz">
+            <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante2.jpg">
+            <div class="overlay">
+              <h2><a data-toggle="modal" href="#modal5">Laminado</a></h2>
+            </div>
+          </div>
+          <div class="imagen animation  Barniz">
+            <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante3.jpg">
+            <div class="overlay">
+              <h2><a data-toggle="modal" href="#modal6">Laminado</a></h2>
+            </div>
+          </div>
+          <div class="imagen animation  Barniz">
+            <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante4.jpg">
+            <div class="overlay">
+              <h2><a data-toggle="modal" href="#modal7">Laminado</a></h2>
+            </div>
+          </div>
+          <div class="imagen animation  Laminado">
+            <img src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate1.jpg">
+            <div class="overlay">
+              <h2><a data-toggle="modal" href="#modal8">Barniz</a></h2>
+            </div>
+          </div>
+          <div class="imagen animation  Laminado">
+            <img src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate2.jpg">
+            <div class="overlay">
+              <h2><a data-toggle="modal" href="#modal9">Barniz</a></h2>
+            </div>
+          </div>
+          <div class="imagen animation  Laminado">
+            <img src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate3.jpg">
+            <div class="overlay">
+              <h2><a data-toggle="modal" href="#modal10">Barniz</a></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODALS PARA MOSTRAR -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">TERMOSELLANTE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/termosellante/galeria1.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">TERMOSELLANTE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/termosellante/galeria2.jpg" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">TERMOSELLANTE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/termosellante/galeria3.jpg" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">BARNIZ</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante1.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">LAMINADO</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante2.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">LAMINADO</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante3.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">LAMINADO</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante4.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">TERMOSELLANTE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate1.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">TERMOSELLANTE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate2.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">TERMOSELLANTE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate3.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TERMINAN LOS MODALS -->
+
+
+  </div>
+  <!--TERMINA CONTENEDOR DE GALERIA-->
+
+  <div id="mapa" class="mapa"></div>
+
+  <div class="content-testimoniales">
+    <h2>Testimoniales</h2>
+  </div>
+
+
+
+  <div class="img-contacto" id="menu-contactenos">
+    <section class="container info-contacto">
+      <div class="titlePrincipales col-md-12 animated aparece delay-1s">
+        <h2>Contacto</h2>
+      </div>
+      <div class="row info-contacto">
+        <div class="col-lg-6 paddingIcono colorCaja animated aparece delay-1s">
+          <i class="fas fa-map-marker-alt tamañoIcono"></i>
+          <p class="color-text-contacto">Nuestra dirección:</p>
+          <p class="color-text-contacto"> Av. Dr. Covarrubias Col. San Isidro
+            #1147 C.P. 56617 Valle de Chalco Solidaridad
+            Estado de México
+          </p>
+        </div>
+        <div class="col-lg-3 paddingIcono colorCaja animated aparece delay-1s">
+          <i class="fas fa-envelope tamañoIcono"></i>
+          <p class="color-text-contacto">Correo Electronico:</p>
+          <p class="color-text-contacto">reynaldo.newprint@gmail.com</p>
+          <p class="color-text-contacto">erick.newprint@gmail.com</p>
+        </div>
+        <div class="col-lg-2 paddingIcono colorCaja animated aparece delay-1s">
+          <i class="fas fa-mobile-alt tamañoIcono"></i>
+          <p class="color-text-contacto">Telefonos:</p>
+          <p class="color-text-contacto">59-71-88-01</p>
+          <p class="color-text-contacto">55-35-94-82-15</p>
+          <p></p>
+        </div>
+
+      </div>
+
+      <div class="row  justify-content-center animated aparece delay-1s">
+        <div class="col-md-6 ">
+          <div class="card margin-card">
+            <div class="card-body">
+              <form action="Enviar.php" id="formularioEnviar" method="POST">
+                <!--Determina el tipo de informacion y jala el archivo php-->
+                <div class="form-group">
+                  <label for="formGroupExampleInput" class="color-text-contacto">Nombre</label>
+                  <input type="name" name="nombre" class="form-control" id="nombre" placeholder="Escribe tu Nombre">
                 </div>
-                  <!-- IMAGENES DE  BARNIZ -->
-                  <div class="imagen animation  Barniz">
-                      <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante1.jpg">
-                      <div class="overlay">
-                        <h2><a data-toggle="modal" href="#modal4">Barniz</a></h2>
-                      </div>
-                  </div>
-                  <div class="imagen animation  Barniz">
-                      <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante2.jpg">
-                      <div class="overlay">
-                         <h2><a data-toggle="modal" href="#modal5">Laminado</a></h2> 
-                      </div>
-                  </div>
-                  <div class="imagen animation  Barniz">
-                      <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante3.jpg">
-                      <div class="overlay">
-                        <h2><a data-toggle="modal" href="#modal6">Laminado</a></h2> 
-                      </div>
-                  </div>
-                  <div class="imagen animation  Barniz">
-                      <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante4.jpg">
-                      <div class="overlay">
-                        <h2><a data-toggle="modal" href="#modal7">Laminado</a></h2> 
-                      </div>
-                  </div>
-                  <div class="imagen animation  Laminado">
-                       <img src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate1.jpg">
-                       <div class="overlay">
-                          <h2><a data-toggle="modal" href="#modal8">Barniz</a></h2>
-                       </div>
-                  </div>
-                  <div class="imagen animation  Laminado">
-                    <img src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate2.jpg">
-                    <div class="overlay">
-                        <h2><a data-toggle="modal" href="#modal9">Barniz</a></h2>
-                    </div>
-                  </div>
-                  <div class="imagen animation  Laminado">
-                    <img src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate3.jpg">
-                    <div class="overlay">
-                        <h2><a data-toggle="modal" href="#modal10">Barniz</a></h2>
-                    </div>
-                  </div>
-              </div>
-         </div>
-      </section>
-      <!-- MODALS PARA MOSTRAR -->
-      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header modal-text">
-              <h5 class="modal-title" id="exampleModalLongTitle">TERMOSELLANTE</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid" src="imagenes/termosellante/galeria1.jpg">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2" class="color-text-contacto">Correo</label>
+                  <input type="email" name="correo" class="form-control" id="email" placeholder="Escribe tu Correo">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2" class="color-text-contacto">Telefono</label>
+                  <input type="text" name="telefono" class="form-control" id="telefono"
+                    placeholder="Escribe tu telefono">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1" class="color-text-contacto">Comentarios</label>
+                  <textarea type="text" name="comentario" id="comentario" class="form-control"
+                    id="exampleFormControlTextarea1" placeholder="Escribe tus Comentarios" rows="3"></textarea>
+                </div>
+                <div class="row" id="loaders">
+                  <img src="imagenes/spinner.gif" id="spinner" width="150">
+                </div>
+                <div class=" form-group col-md-6 btn-enviar">
+                  <button type="submit" id="enviar" name="submit"
+                    class="btn btn-outline-dark tam-btn-enviar">Enviar</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-
-
-      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header modal-text">
-              <h5 class="modal-title" id="exampleModalLongTitle">TERMOSELLANTE</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid" src="imagenes/termosellante/galeria2.jpg" alt="">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header modal-text">
-              <h5 class="modal-title" id="exampleModalLongTitle">TERMOSELLANTE</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid" src="imagenes/termosellante/galeria3.jpg" alt="">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header modal-text">
-              <h5 class="modal-title" id="exampleModalLongTitle">BARNIZ</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid" src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante1.jpg">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header modal-text">
-              <h5 class="modal-title" id="exampleModalLongTitle">LAMINADO</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid" src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante2.jpg">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header modal-text">
-              <h5 class="modal-title" id="exampleModalLongTitle">LAMINADO</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid" src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante3.jpg">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header modal-text">
-              <h5 class="modal-title" id="exampleModalLongTitle">LAMINADO</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid" src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante4.jpg">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header modal-text">
-              <h5 class="modal-title" id="exampleModalLongTitle">TERMOSELLANTE</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid" src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate1.jpg">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header modal-text">
-              <h5 class="modal-title" id="exampleModalLongTitle">TERMOSELLANTE</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid" src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate2.jpg">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header modal-text">
-              <h5 class="modal-title" id="exampleModalLongTitle">TERMOSELLANTE</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img class="img-fluid" src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate3.jpg">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- TERMINAN LOS MODALS -->
-
-
-   </div>
-   <!--TERMINA CONTENEDOR DE GALERIA-->
-   <div class="img-contacto" id="menu-contactenos">
-     <section class="container info-contacto">
-        <div class="titlePrincipales col-md-12 animated aparece delay-1s">
-          <span>Contacto</span>
-        </div>
-        <div class="row info-contacto">
-          <div class="col-lg-6 paddingIcono colorCaja animated aparece delay-1s">
-            <i class="fas fa-map-marker-alt tamañoIcono"></i><p class="color-text-contacto">Nuestra dirección:</p> 
-              <p class="color-text-contacto"> Av. Dr. Covarrubias Col. San Isidro
-                #1147 C.P. 56617 Valle de Chalco Solidaridad
-                Estado de México
-              </p>
-          </div>
-          <div class="col-lg-3 paddingIcono colorCaja animated aparece delay-1s">
-            <i class="fas fa-envelope tamañoIcono"></i><p class="color-text-contacto">Correo Electronico:</p>
-              <p class="color-text-contacto">reynaldo.newprint@gmail.com</p>
-              <p class="color-text-contacto">erick.newprint@gmail.com</p>
-          </div>
-          <div class="col-lg-2 paddingIcono colorCaja animated aparece delay-1s">
-            <i class="fas fa-mobile-alt tamañoIcono"></i><p class="color-text-contacto">Telefonos:</p>
-              <p class="color-text-contacto">59-71-88-01</p>
-              <p class="color-text-contacto">55-35-94-82-15</p>
-              <p></p>
-          </div>
-
-        </div>
-        
-          <div class="row  justify-content-center animated aparece delay-1s">
-            <div class="col-md-6 ">
-              <div class="card margin-card">
-                  <div class="card-body">
-                    <form action="Enviar.php" id="formularioEnviar" method="POST"><!--Determina el tipo de informacion y jala el archivo php-->
-                      <div class="form-group">
-                        <label for="formGroupExampleInput" class="color-text-contacto">Nombre</label>
-                        <input type="name" name="nombre"  class="form-control" id="nombre" placeholder="Escribe tu Nombre">
-                      </div>
-                      <div class="form-group">
-                        <label for="formGroupExampleInput2" class="color-text-contacto">Correo</label>
-                        <input type="email" name="correo"  class="form-control" id="email" placeholder="Escribe tu Correo">
-                      </div>
-                      <div class="form-group">
-                        <label for="formGroupExampleInput2" class="color-text-contacto">Telefono</label>
-                        <input type="text" name="telefono"  class="form-control" id="telefono" placeholder="Escribe tu telefono">
-                      </div>
-                      <div class="form-group">
-                         <label for="exampleFormControlTextarea1" class="color-text-contacto">Comentarios</label>
-                         <textarea type="text" name="comentario" id="comentario" class="form-control" id="exampleFormControlTextarea1" placeholder="Escribe tus Comentarios" rows="3"></textarea>   
-                      </div>
-                      <div class="row" id="loaders">
-                         <img src="imagenes/spinner.gif" id="spinner" width="150">  
-                      </div>
-                      <div class=" form-group col-md-6 btn-enviar">
-                         <button type="submit" id="enviar" name="submit" class="btn btn-outline-dark tam-btn-enviar">Enviar</button>
-                      </div> 
-                  </form>
-                  </div>
-              </div>
-            </div>
-          </div>
-     </section>
-   </div>
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-   <!-- <script src="js/popper.min.js"></script> -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scrip.js"></script>
+    </section>
+  </div>
+  
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scrip.js"></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 </body>
+
 </html>
