@@ -10,14 +10,17 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <title>New Print</title>
 </head>
 
-<body>
+<body >
   <!--COMIENZA EL MENU-->
-  <div class="barra">
+  <div class="barra" >
     <div class="contenedor clearfix">
       <div class="logo">
-        <img src="imagenes/Logo-Print3.png" alt="">
+        <a href="index.html">
+          <img src="imagenes/Logo-Print3.png" alt="">
+        </a>
       </div>
 
       <div class="menu-movil">
@@ -27,18 +30,18 @@
       </div>
 
       <nav class="navegacion-principal">
-        <a href="">Inicio</a>
-        <a href="">Acerca de</a>
-        <a href="">Servicios</a>
-        <a href="">Galeria</a>
-        <a href="">Contacto</a>
+        <a href="#menu-inicio" data-ancla="menu-inicio">Inicio</a>
+        <a href="#menu-acerca-de" data-ancla="menu-acerca-de">Acerca de</a>
+        <a href="#menu-servicios" data-ancla="menu-servicios">Servicios</a>
+        <a href="#menu-galeria" data-ancla="menu-galeria">Galeria</a>
+        <a href="#menu-contactenos" data-ancla="menu-contactenos">Contacto</a>
       </nav>
     </div>
   </div>
 
   <!--TERMINA EL MENU-->
   <!--INICIAN MENSAJES Y BOTON-->
-  <div>
+  <div id="menu-inicio">
     <section class="portada">
       <div class="col-sm-12 animated bounceInDown contBienvenido  delay-1s">
         <span class="font-tituloConoce">Conoce</span> <span class="font-titulo">New Print!</span>

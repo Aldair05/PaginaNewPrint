@@ -25,6 +25,17 @@ $(function(){
     });
 
 
+    /*Funcion de transicion enlaces*/
+    $('nav a').click(function (e) {
+        e.preventDefault();
+        var strAncla = $(this).attr('href');
+        $('body,html').stop(true, true).animate({
+            scrollTop: $(strAncla).offset().top
+        }, 1000);
+    
+    });
+
+
 });
 
 
@@ -50,23 +61,16 @@ $(function(){
 
 /* FIn de Funcion de filtrado Imagenes*/
 
-/*Funcion de transicion enlaces*/
-$('li a').click(function (e) {
-    e.preventDefault();
-    var strAncla = $(this).attr('href');
-    $('body,html').stop(true, true).animate({
-        scrollTop: $(strAncla).offset().top
-    }, 1000);
 
-});
 
-$('div .enlace').click(function (e) {
-    e.preventDefault();
-    var strAncla = $(this).attr('href');
-    $('body,html').stop(true, true).animate({
-        scrollTop: $(strAncla).offset().top
-    }, 1000);
-});
+
+// $('div .enlace').click(function (e) {
+//     e.preventDefault();
+//     var strAncla = $(this).attr('href');
+//     $('body,html').stop(true, true).animate({
+//         scrollTop: $(strAncla).offset().top
+//     }, 1000);
+// });
 
 /*Fin de Funcion de transicion enlaces*/
 
