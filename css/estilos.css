@@ -406,9 +406,26 @@ div.content-iconos ul li a:hover{
 
 .subtitulo-servicio .lista-servicios li {
   color: var(--secundario);
+  
+}
+
+.subtitulo-servicio .lista-servicios li i {
+  padding-right: 5px;
 }
 
 
+div.subtitulo-servicio > i{
+  font-size: 2.5em;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  color: var(--secundario);
+  transition: all .3s ease-out;
+}
+
+div.subtitulo-servicio > i:hover{
+  color: var(--primario);
+}
 
 
 .tamañoIcono{
