@@ -65,6 +65,14 @@ div.barra{
   
 }
 
+.fixed{
+  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+  z-index: 4;
+}
+
 div.logo{
   width: 50%;
   float: left;

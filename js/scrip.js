@@ -1,10 +1,30 @@
 
 //Menu Responsive 
 $(function(){
+
+
     $('.menu-movil').on('click',function(){
         console.log('diste click');
         $('.navegacion-principal').slideToggle();
     });
+
+    //Menu Fijo
+    var windowHeight = $(window).height();
+    var barraAltura = $('.barra').innerHeight();
+
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+
+        if(scroll > windowHeight){
+            $('.barra').addClass('fixed');
+            $('body').css({'margin-top': barraAltura+'px'});
+        }else{
+            $('.barra').removeClass('fixed');
+            $('body').css({'margin-top':'0px'});
+        }
+    });
+
+
 });
 
 
@@ -186,8 +206,7 @@ function validarEmail(campo) {
 
 //Mapa
 
-
-$(window).scroll(function (){
+$(function (){
 
     var map = L.map('mapa').setView([19.285818, -98.93653], 15);
 
@@ -199,6 +218,13 @@ $(window).scroll(function (){
         .bindPopup('New Print')
         .openPopup();
 
+
+
+})
+
+// $(window).scroll(function (){
+
+
         
-});
+// });
 
