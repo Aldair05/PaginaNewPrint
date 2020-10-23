@@ -26,8 +26,8 @@
             $mail->isSMTP();                                      // Protocolo para enviar 
             $mail->Host = 'smtp.gmail.com';                       // servicio de correo  que se va utilizar 
             $mail->SMTPAuth = true;                               // 
-            $mail->Username = 'newPrintConsultas@gmail.com';          // correo desde donde se va enviar el correo 
-            $mail->Password = 'PrintNew.2019';                      // contraseña 
+            $mail->Username = '';          // correo desde donde se va enviar el correo 
+            $mail->Password = '';                      // contraseña 
             $mail->SMTPSecure = 'tls';                            // 
             $mail->Port = 587;                                    // 
             //Recipients

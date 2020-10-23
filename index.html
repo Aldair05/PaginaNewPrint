@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
   <title>New Print</title>
 </head>
@@ -50,7 +51,7 @@
         <span class="lineaContenido">Profesionales en acabados</span>
         <div class="content-iconos">
           <ul>
-            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"  aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
@@ -70,33 +71,52 @@
 
   <div class="" id="menu-acerca-de">
     <section class="container">
-      <div class=" animated aparece titlePrincipales delay-1s">
+      <div class=" animated  titlePrincipales delay-1s">
         <h2>Acerca de la empresa</h2>
       </div>
       <div>
         <div class="">
-          <div class="row">
-            <div class="animated col-md-6 paddingImgAcerca aparece delay-1s">
-              <img class="img-fluid imgAcerca" src="imagenes/img1.jpg">
+          <div class="row py-4">
+            <div class="col-3 buttons-acerca">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                  Empresa
+                </a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                  Mision
+                </a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                  Vision
+                </a> 
+              </div>
             </div>
-            <div class="col-md-6 paddingTexto animated  aparece delay-1s">
-              <p class="textoAcerca">En <span>New Print</span> somos una empresa 100% mexicana con un interés por brindar calidad
-                en nuestro procesos y servicios lo cual nos hace una empresa encaminada al éxito continuo
-                brindando a nuestros clientes la confianza y tranquilidad de los trabajos que realizamos
-                ya que estamos en constante supervisión y actualización de los materiales que utilizamos así
-                como una mano de obra calificada durante nuestros procesos ofreciendo así un producto
-                terminado de calidad. Dándole un valor agregado al trabajo y procesos de nuestros clientes.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="titleMisionVision col-md-6">
-              <p>MISION</p>
-
-            </div>
-            <div class=" titleMisionVision col-md-6">
-              <p>VISION</p>
-
+            <div class="col-9 info-acerca">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active text-center" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <p class="textoAcerca">En <span>New Print</span> somos una empresa 100% mexicana con un interés por brindar calidad
+                    en nuestro procesos y servicios lo cual nos hace una empresa encaminada al éxito continuo
+                    brindando a nuestros clientes la confianza y tranquilidad de los trabajos que realizamos
+                    ya que estamos en constante supervisión y actualización de los materiales que utilizamos así
+                    como una mano de obra calificada durante nuestros procesos ofreciendo así un producto
+                    terminado de calidad. Dándole un valor agregado al trabajo y procesos de nuestros clientes.
+                  </p>
+                  <img class="img-fluid imgAcerca" src="imagenes/img1.jpg">
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <p class="textoAcerca">
+                    Nuestro compromiso como empresa es el de apoyar al cliente par que su producto lo obtenga en
+                    el tiempo y forma necesarios para todos y cada uno de nuestros clientes, todo esto basado en la
+                    experiencia adquirida en nuestro equipo de trabajo.
+                  </p>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  <p class="textoAcerca">
+                    Ofrecemos  el servicio de recolección de materiales sin costo adicional, manteniéndonos
+                    al tanto de las necesidades de nuestros clientes, manejándonos como un socio de negocios y no
+                    como solamente un proveedor ofreciendo un servicio de transporte inmejorable
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -107,23 +127,23 @@
   <!--INICIA CONTENEDOR SERVICIOS-->
   <div class="fondocontenedores" id="menu-servicios">
     <section class="container">
-      <div class=" animated titlePrincipales col-md-12 aparece delay-1s">
-        <h2>Servicios</h2>
+      <div class=" animated titlePrincipales col-md-12  delay-1s">
+        <h2>Nuestros Servicios</h2>
       </div>
       <div class="subtituloServicios col-md-12">
         <p>Estos son los servicios a nuestros clientes:</p>
       </div>
       <div class="row">
-        <div class="col-md-4 subtitulo-servicio paddingIcono animated aparece delay-1s">
-          <i class="fa fa-files-o " aria-hidden="true"></i>
+        <div class="col-md-3 subtitulo-servicio paddingIcono animated  delay-1s">
+          <img src="/imagenes/iconos/pintura2.svg" class="img-fluid" alt="">
           <p>Barniz Termosellante<p>
               <ul class="lista-servicios">
                 <li><i class="fa fa-check" aria-hidden="true"></i>Base Agua</li>
                 <li><i class="fa fa-check" aria-hidden="true"></i>Base Solvente</li>
               </ul>
         </div>
-        <div class="col-md-4 subtitulo-servicio paddingIcono animated aparece delay-1s">
-          <i class="fa fa-clipboard " aria-hidden="true"></i>
+        <div class="col-md-3 subtitulo-servicio paddingIcono animated  delay-1s">
+          <img src="/imagenes/iconos/brush.svg" class="img-fluid" alt="">
           <p>Barniz U.V Mate y Brillante</p>
           <ul class="lista-servicios">
             <li><i class="fa fa-check" aria-hidden="true"></i>Plasta</li>
@@ -133,8 +153,8 @@
             <li><i class="fa fa-check" aria-hidden="true"></i>Serigrafia</li>
           </ul>
         </div>
-        <div class="col-md-4 subtitulo-servicio paddingIcono animated aparece delay-1s">
-          <i class="fa fa-file-image-o " aria-hidden="true"></i>
+        <div class="col-md-3 subtitulo-servicio paddingIcono animated  delay-1s">
+          <img src="/imagenes/iconos/brush2.svg" class="img-fluid" alt="">
           <p>Laminado Termico</p>
           <ul class="lista-servicios">
             <li><i class="fa fa-check" aria-hidden="true"></i>Mate</li>
@@ -144,6 +164,10 @@
             <li><i class="fa fa-check" aria-hidden="true"></i>Especializado</li>
           </ul>
         </div>
+        <div class="col-md-3 subtitulo-servicio paddingIcono animated  delay-1s">
+          <img src="/imagenes/iconos/truck.svg" class="img-fluid" alt="">
+          <p>Recolección de materiales</p>
+        </div>
       </div>
     </section>
   </div>
@@ -151,7 +175,7 @@
   <!--INICIA CONTENEDOR DE GALERIA-->
   <div class="" id="menu-galeria">
     <section class="container ">
-      <div class="col-md-12 animated aparece delay-1s">
+      <div class="col-md-12 animated  delay-1s">
         <h2>Galeria</h2>
       </div>
       <div>
@@ -170,68 +194,68 @@
           </div>
         </div>
       </div>
-      <div class="galeria animated aparece delay-1s">
+      <div class="galeria animated  delay-1s">
         <div class="contenedor-imagenes" id="galeria">
           <!-- Imagenes de termosellante -->
           <div class=" modal-container imagen animation  Termosellante">
             <img id="img" src="imagenes/termosellante/galeria1.jpg" alt="">
             <div class="overlay">
-              <h2><a data-toggle="modal" href="#modal1">Termosellante</a></h2>
+              <h5><a data-toggle="modal" href="#modal1">Termosellante</a></h5>
             </div>
           </div>
           <div id="img" class="imagen animation  Termosellante ">
             <img src="imagenes/termosellante/galeria2.jpg" alt="">
             <div class="overlay">
-              <h2><a data-toggle="modal" href="#modal2">Termosellante</a></h2>
+              <h5><a data-toggle="modal" href="#modal2">Termosellante</a></h5>
             </div>
           </div>
           <div id="img" class=" imagen animation  Termosellante ">
             <img src="imagenes/termosellante/galeria3.jpg" alt="">
             <div class="overlay">
-              <h2><a data-toggle="modal" href="#modal3">Termosellante</a></h2>
+              <h5><a data-toggle="modal" href="#modal3">Termosellante</a></h5>
             </div>
           </div>
           <!-- IMAGENES DE  BARNIZ -->
           <div class="imagen animation  Barniz">
             <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante1.jpg">
             <div class="overlay">
-              <h2><a data-toggle="modal" href="#modal4">Barniz</a></h2>
+              <h5><a data-toggle="modal" href="#modal4">Barniz</a></h5>
             </div>
           </div>
           <div class="imagen animation  Barniz">
             <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante2.jpg">
             <div class="overlay">
-              <h2><a data-toggle="modal" href="#modal5">Laminado</a></h2>
+              <h5><a data-toggle="modal" href="#modal5">Laminado</a></h5>
             </div>
           </div>
           <div class="imagen animation  Barniz">
             <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante3.jpg">
             <div class="overlay">
-              <h2><a data-toggle="modal" href="#modal6">Laminado</a></h2>
+              <h5><a data-toggle="modal" href="#modal6">Laminado</a></h5>
             </div>
           </div>
           <div class="imagen animation  Barniz">
             <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante4.jpg">
             <div class="overlay">
-              <h2><a data-toggle="modal" href="#modal7">Laminado</a></h2>
+              <h5><a data-toggle="modal" href="#modal7">Laminado</a></h5>
             </div>
           </div>
           <div class="imagen animation  Laminado">
             <img src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate1.jpg">
             <div class="overlay">
-              <h2><a data-toggle="modal" href="#modal8">Barniz</a></h2>
+              <h5><a data-toggle="modal" href="#modal8">Barniz</a></h5>
             </div>
           </div>
           <div class="imagen animation  Laminado">
             <img src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate2.jpg">
             <div class="overlay">
-              <h2><a data-toggle="modal" href="#modal9">Barniz</a></h2>
+              <h5><a data-toggle="modal" href="#modal9">Barniz</a></h5>
             </div>
           </div>
           <div class="imagen animation  Laminado">
             <img src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate3.jpg">
             <div class="overlay">
-              <h2><a data-toggle="modal" href="#modal10">Barniz</a></h2>
+              <h5><a data-toggle="modal" href="#modal10">Barniz</a></h5>
             </div>
           </div>
         </div>
@@ -446,82 +470,89 @@
   <!--TERMINA CONTENEDOR DE GALERIA-->
 
   <div id="mapa" class="mapa"></div>
-
-  <div class="content-testimoniales">
-    <h2>Testimoniales</h2>
+    <div class="content-testimoniales">
+      <h2>Testimoniales</h2>
+    </div>
   </div>
-
-
-
-  <div class="img-contacto" id="menu-contactenos">
-    <section class="container info-contacto">
-      <div class="titlePrincipales col-md-12 animated aparece delay-1s">
-        <h2>Contacto</h2>
-      </div>
-      <div class="row info-contacto">
-        <div class="col-lg-6 paddingIcono colorCaja animated aparece delay-1s">
-          <i class="fas fa-map-marker-alt tamañoIcono"></i>
-          <p class="color-text-contacto">Nuestra dirección:</p>
-          <p class="color-text-contacto"> Av. Dr. Covarrubias Col. San Isidro
-            #1147 C.P. 56617 Valle de Chalco Solidaridad
-            Estado de México
-          </p>
+  
+  <footer class="container-fluid ">
+    <div class="container">
+      <div class="row text-center content-footer">
+        <div class="col-md-4">
+          <p>Sobre Nosotros</p>
+          <p class="text">En New Print somos una empresa 100% mexicana con un interés por brindar calidad en nuestro procesos y servicios lo cual nos hace una empresa encaminada al éxito continuo brindando a nuestros clientes la confianza y tranquilidad de los trabajos que realizamos</p>
         </div>
-        <div class="col-lg-3 paddingIcono colorCaja animated aparece delay-1s">
-          <i class="fas fa-envelope tamañoIcono"></i>
-          <p class="color-text-contacto">Correo Electronico:</p>
-          <p class="color-text-contacto">reynaldo.newprint@gmail.com</p>
-          <p class="color-text-contacto">erick.newprint@gmail.com</p>
+  
+        <div class="col-md-4">
+          <p>Datos de contacto</p>
+              <ul>
+                <li>
+                  <i class="tamanio-icono fa fa-map-marker" aria-hidden="true"></i><span class="direccion">Av. Tlaloc Mz. 334 Lt. 14 Col. Santa Cruz C.P.56617 Valle de Chalco Solidaridad Estado de Mexico.</span> 
+                </li>
+                <li>
+                  <a href="mailto:reynaldo.newprint@gmail.com">
+                    <i class="tamanio-icono fa fa-envelope" aria-hidden="true"></i>
+                  </a>      
+                </li>
+                <li>    
+                  <a href="http://web.whatsapp.com/send?phone=525535948215" target="_blank">
+                    <i class="tamanio-icono fa fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
         </div>
-        <div class="col-lg-2 paddingIcono colorCaja animated aparece delay-1s">
-          <i class="fas fa-mobile-alt tamañoIcono"></i>
-          <p class="color-text-contacto">Telefonos:</p>
-          <p class="color-text-contacto">59-71-88-01</p>
-          <p class="color-text-contacto">55-35-94-82-15</p>
-          <p></p>
-        </div>
-
-      </div>
-
-      <div class="row  justify-content-center animated aparece delay-1s">
-        <div class="col-md-6 ">
-          <div class="card margin-card">
-            <div class="card-body">
-              <form action="Enviar.php" id="formularioEnviar" method="POST">
-                <!--Determina el tipo de informacion y jala el archivo php-->
-                <div class="form-group">
-                  <label for="formGroupExampleInput" class="color-text-contacto">Nombre</label>
-                  <input type="name" name="nombre" class="form-control" id="nombre" placeholder="Escribe tu Nombre">
-                </div>
-                <div class="form-group">
-                  <label for="formGroupExampleInput2" class="color-text-contacto">Correo</label>
-                  <input type="email" name="correo" class="form-control" id="email" placeholder="Escribe tu Correo">
-                </div>
-                <div class="form-group">
-                  <label for="formGroupExampleInput2" class="color-text-contacto">Telefono</label>
-                  <input type="text" name="telefono" class="form-control" id="telefono"
-                    placeholder="Escribe tu telefono">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1" class="color-text-contacto">Comentarios</label>
-                  <textarea type="text" name="comentario" id="comentario" class="form-control"
-                    id="exampleFormControlTextarea1" placeholder="Escribe tus Comentarios" rows="3"></textarea>
-                </div>
-                <div class="row" id="loaders">
-                  <img src="imagenes/spinner.gif" id="spinner" width="150">
-                </div>
-                <div class=" form-group col-md-6 btn-enviar">
-                  <button type="submit" id="enviar" name="submit"
-                    class="btn btn-outline-dark tam-btn-enviar">Enviar</button>
-                </div>
-              </form>
+  
+        <div class="col-md-4">
+          <p>Navegacion</p>
+            <ul class="footer-navegacion">
+              <li>
+                <a href="#menu-inicio" data-ancla="menu-inicio">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>Inicio
+                </a>
+              </li>
+              <li>
+                <a href="#menu-acerca-de" data-ancla="menu-acerca-de">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>Acerca de
+                </a>
+              </li>
+              <li>
+                <a href="#menu-servicios" data-ancla="menu-servicios">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>Servicios
+                </a>
+              </li>
+              <li>
+                <a href="#menu-galeria" data-ancla="menu-galeria">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>Galeria
+                </a>
+              </li>
+            </ul>
+        </div><!--col-md-4-->
+      </div><!--.row-->
+    </div>
+    
+    
+      <div class="container footer-redes">
+        <div class="row">
+          <div class="col-md-6">
+              <p>© 2020. Todos los derecho recervados | Diseñado por AldairRa</p>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-content-iconos">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"  aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </div>
-  
+    
+  </footer>
+
+
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
