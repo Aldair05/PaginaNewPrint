@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <title>New Print</title>
+</head>
+
+<body >
+  <!--COMIENZA EL MENU-->
+  <div class="barra" >
+    <div class="contenedor clearfix">
+      <div class="logo">
+        <a href="index.html">
+          <img src="imagenes/Logo-Print3.png" alt="">
+        </a>
+      </div>
+
+      <div class="menu-movil">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navegacion-principal">
+        <a href="#menu-inicio" data-ancla="menu-inicio">Inicio</a>
+        <a href="#menu-acerca-de" data-ancla="menu-acerca-de">Acerca de</a>
+        <a href="#menu-servicios" data-ancla="menu-servicios">Servicios</a>
+        <a href="#menu-galeria" data-ancla="menu-galeria">Galeria</a>
+        <a href="#menu-contactenos" data-ancla="menu-contactenos">Contacto</a>
+      </nav>
+    </div>
+  </div>
+
+  <!--TERMINA EL MENU-->
+  <!--INICIAN MENSAJES Y BOTON-->
+  <div id="menu-inicio">
+    <section class="">
+      <div class="">
+        <div id="slider-principal" class="carousel slide " data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#slider-principal" data-slide-to="0" class="active"></li>
+            <li data-target="#slider-principal" data-slide-to="1"></li>
+            <li data-target="#slider-principal" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" >
+              <img src="imagenes/slider/slider-principal.jpg" class="img-fluid" alt="Imprenta">
+              <div class="carousel-caption">
+                <div class="col-sm-12 animated bounceInDown contBienvenido  delay-1s">
+                  <span class="font-tituloConoce">Conoce</span> <span class="font-titulo">New Print!</span>
+                </div>
+                <div class="animated fadeInLeft contProfesionales delay-1s">
+                  <span class="lineaContenido">Profesionales en acabados</span>
+                  <div class="content-iconos">
+                    <ul>
+                      <li><a href="#"><i class="fa fa-facebook"  aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/slider/Slider2N.jpg" class="img-fluid"  alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/slider/Slider1N.jpg" class="img-fluid">
+            </div>
+          </div><!--carousel-item-->
+          <a href="#slider-principal" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a href="#slider-principal" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Despues</span>
+          </a>
+        </div><!--slider-principal-->
+      </div>
+    </section>
+  </div>
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scrip.js"></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  </body>
+  </html>
