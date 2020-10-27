@@ -363,12 +363,9 @@ div.content-iconos ul li a:hover{
   width: 60%;
 }
 
-.imgAcerca{
-  border-radius: 5px;
-  -webkit-box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
-}
+
+
+
 .paddingImgAcerca{
 
   padding-top: 50px;
@@ -385,7 +382,7 @@ div.content-iconos ul li a:hover{
   padding: 20px;
   text-align: justify;
   font-family: var(--fuente);
-  font-size: 1em;
+  font-size: 0.93rem;
   color: var(--secundario);
   font-weight: 400;
 }
@@ -394,8 +391,14 @@ div.content-iconos ul li a:hover{
   font-weight: bold;
 }
 
+.contenedor-img-acerca img{
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.75);
+}
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+/* .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   border-radius:0px;
   background-color: var(--primario);
   padding: 15px;
@@ -412,7 +415,7 @@ div.content-iconos ul li a:hover{
   color: #ffffff;
   margin-bottom:2px;
   padding: 15px;
-}
+} */
 
 
 .paddingTexto{
@@ -452,7 +455,7 @@ div.content-iconos ul li a:hover{
 
 @media only screen and (max-width:768px){
   .subtitulo-servicio img{
-    width: 20%;
+    width: 18%;
   }
 }
 
@@ -648,7 +651,7 @@ ul{
   height: 0;
   transition: .5 ease;
   overflow :hidden;
-  transition: 0.8s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .overlay h5{
@@ -746,11 +749,16 @@ h5 a:hover{
 }
 
 .modal-header span{
-  color:white;
+  color:black;
+}
+
+.modal-title{
+  color:black;
 }
 
 .modal-content{
   border-bottom: 0px solid #17a2b8 !important;
+  background-color: #fff;
 }
 
 
@@ -863,6 +871,7 @@ div.mapa{
   /* background-color: green; */
   height: 420px;
   margin-bottom: 60px;
+  z-index: 200;
 }
 
 /* TESTIMONIALES  */
