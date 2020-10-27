@@ -447,12 +447,12 @@ div.content-iconos ul li a:hover{
 /* ESTILOS SERVICIOS  */
 
 .subtitulo-servicio img{
-  width: 23%;
+  width: 35%;
 }
 
 @media only screen and (max-width:768px){
   .subtitulo-servicio img{
-    width: 18%;
+    width: 20%;
   }
 }
 
@@ -518,6 +518,8 @@ div.subtitulo-servicio > i:hover{
   border-radius: 4px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, .2);
   transition: all 400ms ease;
+  border-bottom-style: solid;
+  border-bottom-color: var(--primario);
 }
 
 
@@ -571,11 +573,7 @@ div.subtitulo-servicio > i:hover{
   color: #fff;
 }
 
-@media only screen and (max-width:768px){
-  .card-servicios img{
-    width: 10%;
-  }
-}
+
 
 
 /* ESTILOS GALERIA */
@@ -747,6 +745,10 @@ h5 a:hover{
   border-bottom: 0px solid #17a2b8;
 }
 
+.modal-header span{
+  color:white;
+}
+
 .modal-content{
   border-bottom: 0px solid #17a2b8 !important;
 }
@@ -863,6 +865,65 @@ div.mapa{
   margin-bottom: 60px;
 }
 
+/* TESTIMONIALES  */
+
+
+.contentedor-testimoniales{
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+.cards-testimoniales{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+.cards-testimoniales .card-individuales {
+  width: 32%;
+  padding: 20px;
+  background-color: #F2F8FF;
+  margin-right: 12px;
+}
+
+.card-individuales img{
+  width: 20%;  
+  border-radius: 70px;
+}
+
+.card-individuales h6{
+
+  color: var(--secundario);
+  font-family: var(--fuente-secundaria);
+  font-size: 1.2rem;
+  padding-top: 10px;
+  color:var(--primario);
+
+}
+
+.card-individuales p{
+  color:var(--secundario);
+  font-family: var(--fuente-secundaria);
+  font-size: 1.0rem;
+  
+}
+
+
+@media only screen and (max-width:768px){
+  .cards-testimoniales{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cards-testimoniales .card-individuales{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 
 
 /* ESTILOS FOOTER */
