@@ -5,6 +5,7 @@
   --secundario: #8c8c8c;
   --primario : #05BAC9;
   --fuente-secundaria: 'Nunito', sans-serif;
+  --color-gris1: #E5E5E5;
 }
 
 
@@ -87,8 +88,7 @@ div.logo img{
 @media only screen and (min-width:768px){
   div.logo{
     width: 28%;
-    padding-bottom: 10px;
-    padding-top: 20px;
+    line-height: 2;
 
   }
 }
@@ -158,10 +158,11 @@ div.menu-movil:hover {
 }
 
 div.menu-movil span{
-  height: 8px;
+  height: 3px;
   margin-bottom: 6px;
   background-color: #ffffff;
   display: block;
+  width: 30px;
 }
 
 @media only screen and (min-width:768px){
@@ -367,7 +368,6 @@ div.content-iconos ul li a:hover{
 
 
 .paddingImgAcerca{
-
   padding-top: 50px;
 }
 
@@ -376,13 +376,16 @@ div.content-iconos ul li a:hover{
 #menu-galeria,
 #menu-contactenos{
   padding-top: 30px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: var(--primario);
 }
 
 .textoAcerca{
   padding: 20px;
   text-align: justify;
-  font-family: var(--fuente);
-  font-size: 0.93rem;
+  font-family: var(--fuente-secundaria);
+  font-size: 1rem;
   color: var(--secundario);
   font-weight: 400;
 }
@@ -586,6 +589,9 @@ ul{
   list-style: none;
 }
 
+.galeria.animated{
+  margin-top: 10px;
+}
 .ul-pal{ 
   position: absolute;
   margin-left: -20px;
@@ -871,7 +877,7 @@ div.mapa{
   /* background-color: green; */
   height: 420px;
   margin-bottom: 60px;
-  z-index: 200;
+  z-index: 1;
 }
 
 /* TESTIMONIALES  */
@@ -881,7 +887,7 @@ div.mapa{
   height: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  
+  padding: 0;
 }
 
 .cards-testimoniales{
@@ -911,6 +917,7 @@ div.mapa{
   font-size: 1.2rem;
   padding-top: 10px;
   color:var(--primario);
+  font-weight: 600;
 
 }
 
@@ -918,6 +925,7 @@ div.mapa{
   color:var(--secundario);
   font-family: var(--fuente-secundaria);
   font-size: 1.0rem;
+  font-weight: 500;
   
 }
 
@@ -938,14 +946,27 @@ div.mapa{
 /* ESTILOS FOOTER */
 
 footer{
-  background-color: #212121;
+  background-color: white;
 }
+
+.container-fluid .container{
+  padding: 0;
+}
+
+.container-fluid .container div:nth-child(2) ul{
+  padding: 0;
+}
+
+.container-fluid .container div:nth-child(3) ul{
+   padding: 0;
+}
+
 
 .content-footer p{
   padding-top: 30px;
-  color:#ffffff;
+  color: var(--primario);
   font-size: 1.2rem;
-  font-family: var(--fuente);
+  font-family: var(--fuente-secundaria);
   font-weight: bold;
 } 
 
@@ -953,10 +974,11 @@ footer{
 .content-footer .text{
 
    font-size: 0.8rem;
-   font-family: var(--fuente);
+   font-family: var(--fuente-secundaria);
    text-align: justify;
    padding: 0px;
-   color: #6B6B6B;
+   color: black;
+   font-weight: 500;
 }
 
 ul li {
@@ -966,15 +988,14 @@ ul li {
 ul li .direccion{
   
   font-size: 0.8rem;
-  font-family: var(--fuente);
+  font-family: var(--fuente-secundaria);
   text-align: start;
   padding: 15px;
-  color: #6B6B6B;
-  font-weight: bold;
+  color: black;
+  font-weight: 500;
 }
 
 ul li  .tamanio-icono{
-  
   color:var(--primario);
   font-size: 1.6rem;
 }
@@ -1000,21 +1021,17 @@ ul li  .tamanio-icono{
 
 }
 
-.footer-navegacion 
-
-
-
 .footer-navegacion li {
   text-align: start;
   padding-bottom: 10px;
 }
 
 .footer-navegacion li a{
-  color:#6B6B6B;
+  color:black;
   text-decoration: none;
-  font-family: var(--fuente);
+  font-family: var(--fuente-secundaria);
   font-size: 0.9rem;
-  font-weight: bold;
+  font-weight: 500;
   transition: all 0.8s ease-in-out;
 }
 
@@ -1038,17 +1055,16 @@ ul li  .tamanio-icono{
 
 
 .footer-redes {
-  border-top-style: 1px;
   border-top-style: solid;
   border-top-width: 1px;
-  border-top-color: #ffffff;
+  border-top-color: var(--color-gris1);
 
 }
 
 .footer-redes p{
   padding-top: 10px;
-  color:#6B6B6B;
-  font-size: 1.0rem;
+  color:black;
+  font-size: 0.8rem;
   font-family: var(--fuente-secundaria);
 
 }
@@ -1068,6 +1084,10 @@ ul li  .tamanio-icono{
 .footer-content-iconos ul li a{
   color:#ffffff;
   transition: all 0.6s ease-in;
+}
+
+.footer-content-iconos ul li a i:before{
+  color: var(--primario);
 }
 
 .footer-content-iconos ul li a:hover{
