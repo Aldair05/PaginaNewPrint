@@ -1,130 +1,599 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" href="css/">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet"><body>
-    
-    
-      <!--COMIENZA EL MENU-->
-    <div class="">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-trans">
-        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="col-md-2" id="logo">
-          <img class="img-fluid" src="imagenes/Logo-Print3.png">
-        </div>
-        <div class="collapse col-md-8 navbar-collapse justify-content-center menu" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item efectoMenu">
-              <a class="nav-link  uno" href="#">Inicio </a>
-            </li>
-            <li class="nav-item efectoMenu">
-              <a class="nav-link  dos" href="#">Acerca de</a>
-            </li>
-            <li class="nav-item efectoMenu">
-              <a class="nav-link " href="#">Servicios</a>
-            </li>
-            <li class="nav-item efectoMenu">
-              <a class="nav-link" href="#">Galeria</a>
-            </li>
-            <li class="nav-item efectoMenu">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <link rel="shortcut icon" href="imagenes/icon.png"> 
+  <title>New Print</title>
+</head>
+
+<body >
+  <!--COMIENZA EL MENU-->
+  <div class="barra" >
+    <div class="contenedor clearfix">
+      <div class="logo">
+        <a href="index.html">
+          <img src="imagenes/Logo-Print3.png" alt="">
+        </a>
+      </div>
+
+      <div class="menu-movil">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navegacion-principal">
+        <a href="#menu-inicio" data-ancla="menu-inicio">Inicio</a>
+        <a href="#menu-acerca-de" data-ancla="menu-acerca-de">Acerca de</a>
+        <a href="#menu-servicios" data-ancla="menu-servicios">Servicios</a>
+        <a href="#menu-galeria" data-ancla="menu-galeria">Galeria</a>
+        <a href="#menu-contactenos" data-ancla="menu-contactenos">Contacto</a>
+      </nav>
+    </div>
+  </div>
+
+  <!--TERMINA EL MENU-->
+  <!--INICIAN MENSAJES Y BOTON-->
+  <div id="menu-inicio">
+    <section class="portada">
+      <div class="col-sm-12 animated bounceInDown contBienvenido  delay-1s">
+        <span class="font-tituloConoce">Conoce</span> <span class="font-titulo">New Print!</span>
+      </div>
+      <div class="animated fadeInLeft contProfesionales delay-1s">
+        <span class="lineaContenido">Profesionales en acabados</span>
+        <div class="content-iconos">
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook"  aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
           </ul>
         </div>
-       </nav>
-
-      
-    </div>
-   <!--TERMINA EL MENU-->
-  <!--INICIAN MENSAJES Y BOTON-->
-  <div>
-    <section class=" portada">
-      <div class="animated bounceInDown contBienvenido justify-content-center">
-         <span class="font-tituloConoce">Conoce</span> <span class="font-titulo">New Print!</span>
       </div>
-      <div class="animated fadeInLeft contProfesionales justify-content-center">
-        <h5  class="lineaContenido">Profesionales en acabados</h5>
+      <div class=" animated fadeInUp styleButton justify-content-center delay-1s">
+        <!-- <button type="button" id="btnServicios" class="btn btn-info"><a href="#menu-servicios"
+            class="txtColor">Servicios</a></button> -->
       </div>
-       <div class=" animated fadeInUp styleButton justify-content-center">
-         <button type="button" class="btn btn-info">Servicios</button>
-       </div>
     </section>
   </div>
   <!--TERMINAN MENSAJES Y BOTON-->
 
   <!--INICIA CONTENEDOR ACERCA DE-->
 
-   <div class="contenedorAcercade">
-     <section class="container ">
-       <div class="titlePrincipales">
-         <span>Acerca de la empresa</span>
-       </div>
-       <div>
-          <div class="">
-            <div class="row">
-                 <div class="col-md-6 paddingTexto">
-                    fdgfdg
-                 </div>
-                 <div class="col-md-6 paddingTexto">
-                    <p class="textoAcerca">En New Print somos una empresa 100% mexicana con un interés por brindar calidad 
-                      en nuestro procesos y servicios lo cual nos hace una empresa encaminada al éxito continuo 
-                      brindando a nuestros clientes la confianza y tranquilidad de los trabajos que realizamos 
-                      ya que estamos en constante supervisión y actualización de los materiales que utilizamos así 
-                      como una mano de obra calificada durante nuestros procesos ofreciendo así un producto  
-                      terminado de calidad. Dándole un valor agregado al trabajo y procesos de nuestros clientes. 
-                    </p>
-                 </div>
+  <div class="" id="menu-acerca-de">
+    <section class="container">
+      <div class=" animated  titlePrincipales delay-1s">
+        <h2>Acerca de la empresa</h2>
+      </div>
+      <div class="row py-5">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="textoAcerca">En <span>New Print</span> somos una empresa 100% mexicana con un interés por brindar calidad
+                en nuestro procesos y servicios lo cual nos hace una empresa encaminada al éxito continuo
+                brindando a nuestros clientes la confianza y tranquilidad de los trabajos que realizamos
+                ya que estamos en constante supervisión y actualización de los materiales que utilizamos. 
+              </p>
             </div>
-            <div class="row">
-                <div class="titleMisionVision col-md-6">
-                    <p>MISION</p>
-
-                </div>
-                <div class=" titleMisionVision col-md-6">
-                   <p>VISION</p>
-
-                </div>
-            </div>
-          </div>
-       </div>
-     </section>
-   </div>
-   <!--TERMINAN CONTENEDOR ACERCA DE-->
-   
-   <!--INICIA CONTENEDOR SERVICIOS-->
-   <div class="contenedorServicios">
-        <section class="container">
-          <div class="titlePrincipales col-md-12">
-                <span>Servicios</span>
-          </div>
-          <div class="subtituloServicios col-md-12">
-            <span>Estos son los servicios a nuestros clientes:</span>
           </div>
           <div class="row">
-              <div class="col-md-4">
-                  1
-              </div>
-              <div class="col-md-4">
-                  2
-              </div>
-              <div class="col-md-4">
-                 3 
-              </div>
+            <div class="col-md-12">
+              <p class="textoAcerca">
+                Nuestro compromiso como empresa es el de apoyar al cliente par que su producto lo obtenga en
+                el tiempo y forma necesarios para todos y cada uno de nuestros clientes, todo esto basado en la
+                experiencia adquirida en nuestro equipo de trabajo.
+              </p>
+            </div>
           </div>
-        </section>
-   </div>
-   <!--TERMINA CONTENEDOR DE SERVICIOS-->
+        </div>
+        <div class="col-md-6 contenedor-img-acerca">
+          <img src="imagenes/slider/Slider2N.jpg" class="img-fluid" alt="">
+          <p class="textoAcerca">
+
+            Nuestra vision es mantenernos al tanto de las necesidades de nuestros clientes, manejandonos como un socio de negocios y no como solamente un proveedor asi como una mano de obra calificada durante los procesos.
+            
+            <!-- así
+            como una mano de obra calificada durante nuestros procesos ofreciendo así un producto
+            terminado de calidad. Dándole un valor agregado al trabajo y procesos de nuestros clientes.
+
+            Ofrecemos  el servicio de recolección de materiales sin costo adicional, manteniéndonos
+            al tanto de las necesidades de nuestros clientes, manejándonos como un socio de negocios y no
+            como solamente un proveedor ofreciendo un servicio de transporte inmejorable -->
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--TERMINAN CONTENEDOR ACERCA DE-->
+  <!--INICIA CONTENEDOR SERVICIOS-->
+  <div class="fondocontenedores" id="menu-servicios">
+    <section class="container">
+      <div class=" animated titlePrincipales col-md-12  delay-1s">
+        <h2>Nuestros Servicios</h2>
+      </div>
+      <div class="subtituloServicios col-md-12">
+        <p>Estos son los servicios a nuestros clientes:</p>
+      </div>
+      <div class="row content-servicios">
+        <div class="col-md-3 subtitulo-servicio paddingIcono animated  delay-1s">
+          <div class="card-servicios">
+            <img src="imagenes/iconos/pintura1.svg" class="imgfluid" alt="">
+            <p>Barniz Termosellante</p>
+            <span class="servicio-descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere reprehenderit libero sit nihil porro dolorem saepe nulla.</span>
+
+            <div class="button-servicios">
+              <a href="#v-pills-home">
+                Leer Mas
+              </a>
+            </div>
+
+          </div><!--card-servicios-->
+        </div><!--col-md-3-->
+        <div class="col-md-3 subtitulo-servicio paddingIcono animated  delay-1s">
+          <div class="card-servicios">
+            <img src="imagenes/iconos/brocha.svg" class="img-fluid" alt="">
+            <p>Barniz U.V Mate y Brillante</p>
+            <span class="servicio-descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere reprehenderit libero sit nihil porro dolorem saepe nulla.</span>
+
+            <div class="button-servicios">
+              <a href="#v-pills-home">
+                Leer Mas
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3 subtitulo-servicio paddingIcono animated  delay-1s">
+          <div class="card-servicios">
+            <img src="imagenes/iconos/brocha2.svg" class="img-fluid" alt="">
+            <p>Laminado Termico</p>
+            <span class="servicio-descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere reprehenderit libero sit nihil porro dolorem saepe nulla.</span>
+
+            <div class="button-servicios">
+              <a href="#v-pills-home">
+                Leer Mas
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3 subtitulo-servicio paddingIcono animated  delay-1s">
+          <div class="card-servicios">
+            <img src="imagenes/iconos/carro.svg" class="img-fluid" alt="">
+            <p>Recolección de materiales</p>
+            <span class="servicio-descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere reprehenderit libero sit nihil porro dolorem saepe nulla.</span>
+            <div class="button-servicios">
+              <a href="#v-pills-home">
+                Leer Mas
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--TERMINA CONTENEDOR DE SERVICIOS-->
+  <!--INICIA CONTENEDOR DE GALERIA-->
+  <div class="" id="menu-galeria">
+    <section class="container ">
+      <div class="col-md-12 animated  delay-1s">
+        <h2>Galeria</h2>
+      </div>
+      <div>
+        <div class="container">
+          <div class="row ">
+            <div class="col-md-12  d-flex justify-content-center padding-menuGaleria animated aparece delay-1s">
+              <button type="button" class="btn-menu btn  btn-outline-dark filter marg-btn btn-tamaño"
+                data-filter="todos">Todos</button>
+              <button type="button" class=" btn-menu btn btn-outline-dark filter marg-btn btn-tamaño"
+                data-filter="Termosellante">Termosellante</button>
+              <button type="button" class="btn-menu btn btn-outline-dark filter marg-btn btn-tamaño"
+                data-filter="Barniz">Barniz</button>
+              <button type="button" class="btn-menu  btn btn-outline-dark filter marg-btn btn-tamaño"
+                data-filter="Laminado">Laminado</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="galeria animated  delay-1s">
+        <div class="contenedor-imagenes" id="galeria">
+          <!-- Imagenes de termosellante -->
+          <div class=" modal-container imagen animation  Termosellante">
+            <img id="img" src="imagenes/termosellante/galeria1.jpg" alt="">
+            <div class="overlay">
+              <h5><a data-toggle="modal" href="#modal1">Termosellante</a></h5>
+            </div>
+          </div>
+          <div id="img" class="imagen animation  Termosellante ">
+            <img src="imagenes/termosellante/galeria2.jpg" alt="">
+            <div class="overlay">
+              <h5><a data-toggle="modal" href="#modal2">Termosellante</a></h5>
+            </div>
+          </div>
+          <div id="img" class=" imagen animation  Termosellante ">
+            <img src="imagenes/termosellante/galeria3.jpg" alt="">
+            <div class="overlay">
+              <h5><a data-toggle="modal" href="#modal3">Termosellante</a></h5>
+            </div>
+          </div>
+          <!-- IMAGENES DE  BARNIZ -->
+          <div class="imagen animation  Barniz">
+            <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante1.jpg">
+            <div class="overlay">
+              <h5><a data-toggle="modal" href="#modal4">Barniz</a></h5>
+            </div>
+          </div>
+          <div class="imagen animation  Barniz">
+            <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante2.jpg">
+            <div class="overlay">
+              <h5><a data-toggle="modal" href="#modal5">Laminado</a></h5>
+            </div>
+          </div>
+          <div class="imagen animation  Barniz">
+            <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante3.jpg">
+            <div class="overlay">
+              <h5><a data-toggle="modal" href="#modal6">Laminado</a></h5>
+            </div>
+          </div>
+          <div class="imagen animation  Barniz">
+            <img src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante4.jpg">
+            <div class="overlay">
+              <h5><a data-toggle="modal" href="#modal7">Laminado</a></h5>
+            </div>
+          </div>
+          <div class="imagen animation  Laminado">
+            <img src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate1.jpg">
+            <div class="overlay">
+              <h5><a data-toggle="modal" href="#modal8">Barniz</a></h5>
+            </div>
+          </div>
+          <div class="imagen animation  Laminado">
+            <img src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate2.jpg">
+            <div class="overlay">
+              <h5><a data-toggle="modal" href="#modal9">Barniz</a></h5>
+            </div>
+          </div>
+          <div class="imagen animation  Laminado">
+            <img src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate3.jpg">
+            <div class="overlay">
+              <h5><a data-toggle="modal" href="#modal10">Barniz</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODALS PARA MOSTRAR -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">Termosellante</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/termosellante/galeria1.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">Termosellante</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/termosellante/galeria2.jpg" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">Termosellante</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/termosellante/galeria3.jpg" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">Barniz</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante1.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">Laminado</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante2.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">Laminado</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante3.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">Laminado</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Barniz-UV-brillante/Barniz-UV-Brillante4.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">Barniz</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate1.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">Barniz</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate2.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-text">
+            <h5 class="modal-title" id="exampleModalLongTitle">Barniz</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="imagenes/Laminado-Plastificado-Mate/Plastificado-Mate3.jpg">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TERMINAN LOS MODALS -->
+
+
+  </div>
+  <!--TERMINA CONTENEDOR DE GALERIA-->
+
+  <div id="mapa" class="mapa">
+
+  </div>
+
+
+
+    <div class="content-testimoniales">
+      <h2>Testimoniales</h2>
+          <div class="container contentedor-testimoniales">
+              <div class="cards-testimoniales">
+                <div class="card-individuales">
+                  <img src="imagenes/testimoniales/testimonio1.jpg" class="img-fluid" alt="mi testimonio1">
+                  <h6>Magaly Hernandez</h6>
+                  <p>Desarrollador</p>
+                  <p>"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"</p>
+                </div>
+                <div class="card-individuales">
+                  <img src="imagenes/testimoniales/testimonio2.jpg" class="img-fluid"  alt="mi testimonio2">
+                  <h6>Alberto Villegas</h6>
+                  <p>Diseñador</p>
+                  <p>"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"</p>
+                </div>
+                <div class="card-individuales">
+                  <img src="imagenes/testimoniales/testimonio3.jpg" class="img-fluid" alt="mi testimonio3">
+                  <h6>Carlos Rodriguez</h6>
+                  <p>Programador jr</p>
+                  <p>"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore"</p>
+                </div>
+              </div>
+          </div><!--.contenedor-testimoniales-->
+    </div>
+
+  
+  <footer class="container-fluid " id="menu-contactenos" >
+    <div class="container">
+      <div class="row  content-footer">
+        <div class="col-md-4">
+          <p>Sobre Nosotros</p>
+          <p class="text">En New Print somos una empresa 100% mexicana con un interés por brindar calidad en nuestro procesos y servicios lo cual nos hace una empresa encaminada al éxito continuo brindando a nuestros clientes la confianza y tranquilidad de los trabajos que realizamos.</p>
+        </div>
+  
+        <div class="col-md-4">
+          <p>Datos de contacto</p>
+              <ul>
+                <li>
+                  <i class="tamanio-icono fa fa-map-marker" aria-hidden="true"></i><span class="direccion">Av. Tlaloc Mz. 334 Lt. 14 Col. Santa Cruz C.P.56617 Valle de Chalco Solidaridad Estado de Mexico.</span> 
+                </li>
+                <li>
+                  <a href="mailto:reynaldo.newprint@gmail.com">
+                    <i class="tamanio-icono fa fa-envelope" aria-hidden="true"></i>
+                  </a>      
+                </li>
+                <li>    
+                  <a href="http://web.whatsapp.com/send?phone=525535948215" target="_blank">
+                    <i class="tamanio-icono fa fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+        </div>
+  
+        <div class="col-md-4">
+          <p>Navegacion</p>
+            <ul class="footer-navegacion">
+              <li>
+                <a href="#menu-inicio" data-ancla="menu-inicio">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>Inicio
+                </a>
+              </li>
+              <li>
+                <a href="#menu-acerca-de" data-ancla="menu-acerca-de">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>Acerca de
+                </a>
+              </li>
+              <li>
+                <a href="#menu-servicios" data-ancla="menu-servicios">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>Servicios
+                </a>
+              </li>
+              <li>
+                <a href="#menu-galeria" data-ancla="menu-galeria">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>Galeria
+                </a>
+              </li>
+            </ul>
+        </div><!--col-md-4-->
+      </div><!--.row-->
+    </div>
+    
+    
+      <div class="container footer-redes">
+        <div class="row">
+          <div class="col-md-6">
+              <p>© 2020. Todos los derechos recervados | Diseñado por AldairRa</p>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-content-iconos">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"  aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>   
+  </footer>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scrip.js"></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 </body>
+
 </html>
